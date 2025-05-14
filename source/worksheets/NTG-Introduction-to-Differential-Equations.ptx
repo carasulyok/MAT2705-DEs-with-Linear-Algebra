@@ -299,37 +299,43 @@
       </statement>
     </definition>
   </page>
+
+  <page>
+   <exercises>
+    <task>
+      <statement>
+        <p>
+          For each of the following differential equations, state the order and determine whether the equation is linear or nonlinear. Identify the independent and dependent variables. 
+        </p>
+        <task>
+          <statement>
+            <p>
+              <m>x \dfrac{d^3y}{dx^3}-\left (\dfrac{dy}{dx}\right)^4+y=0</m>
+            </p>
+            <solution>
+              <p>
+                Order 3, nonlinear (Dependent variable is <m>y</m> and independent variable is <m>x</m>)
+              </p>
+            </solution>
+          </statement>
+        </task>
+      </statement>
+    </task>
+   </exercises>
+  </page>
 </worksheet>
 
 
 
 <!-- 
 
-\vfill
-\end{defs}
 
-\pagebreak
-
-% \begin{example}
-% Verify that $x^2+y^2=25$ is a solution of the differential equation $\dfrac{dy}{dx}=-\dfrac{x}{y}$ on the open interval $(-5,5)$. Obtain an explicit solution. 
-% \end{example}
-
-% \vfill
-
-% \begin{example}
-% Verify that the functions $x=c_1 \cos(4t)$ and $x=c_2 \sin(4t)$, where $c_1$ and $c_2$ are arbitrary constants or parameters, are both solutions of the linear differential equation $x''+16x=0$.
-% \end{example}
-
-% \vfill
-
-% \pagebreak
 
 \textbf{Homework Exercises}
 
 \begin{enumerate}
-\item For each of the following differential equations, state the order and determine whether the equation is linear or nonlinear. Identify the independent and dependent variables. 
 \begin{enumerate}[(a)]
-\item $x \dfrac{d^3y}{dx^3}-\left (\dfrac{dy}{dx}\right)^4+y=0$ 
+\item $$ 
 \item $\dfrac{d^2u}{dr^2}+\dfrac{du}{dr}+u=\cos(r+u)$ 
 \item $(1-x)y''-4xy'+5y=\cos{x}$ 
 \item $t^5y^{(4)}-t^3y''+6y=0$ 
@@ -370,7 +376,7 @@ $$\dfrac{d^2y}{dx^2}-8\dfrac{dy}{dx}+16y=0; \hspace{1cm} y=c_1e^{4x}+c_2xe^{4x}$
 \begin{enumerate}
 \item 
 % \begin{enumerate}[(a)]
-% \item Order 3, nonlinear (Dependent variable is $y$ and independent variable is $x$) 
+% \item  
 % \item Order 2, nonlinear (Dependent variable is $u$ and independent variable is $r$) 
 % \item Order 2, linear (Dependent variable is $y$ and independent variable is $x$)
 % \item Order 4, linear (Dependent variable is $y$ and independent variable is $t$)
