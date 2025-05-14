@@ -93,7 +93,7 @@
 
   <statement>
     <p>
-      <alert>(1) Classification by type</alert>
+      <alert>(1) Classification by type:</alert>
       <ol>
         <li>
           <p>
@@ -111,115 +111,200 @@
     </p>
   </statement>
   
+  <statement>
+    <p>
+      <alert>(2) Classification by order:</alert>
+      The <alert>order</alert> of a differential equation (ODE or PDE) is the 
+      <m>\vspace{3cm}</m>
+      In symbols, we can write an <m>n</m>th-order ordinary differential equation in one dependent variable <m>x</m> in the general form 
+      <me xml-id="eq-F">
+        F(x,y,y',\dots,y^{(n)})=0,
+      </me>
+      where <m>F</m> is a real-value function of <m>n+2</m> variables.
+    </p>
+  </statement>
     
+  <statement>
+    <p>
+      The differential equation 
+      <me>
+        \dfrac{d^n y}{dx^n}=f(x,y,y',\dots,y^{(n-1)}),
+      </me>
+      where <m>f</m> is a real-valued continuous function, is referred to as the <m>\underline{\hspace{7cm}}</m>. 
+    </p>
+  </statement>
+
+  <example>
+    <statement>
+      <p>
+        Solve for the <m>n</m>th derivative so that the differential equation is in normal form.
+        <sidebyside>
+          <task>
+            <statement>
+              <p>
+                <m>4x\dfrac{dy}{dx}+y=x</m>
+              </p>
+            </statement>
+          </task>
+          <task>
+            <statement>
+              <p>
+                <m>y''-y'+6=0</m>
+              </p>
+            </statement>
+          </task>
+        </sidebyside>
+      </p>
+    </statement>
+  </example>
 
   </page>
 
+  <page>
+    <statement>
+      <p>
+        <alert>(3) Classification by linearity:</alert>
+        An <m>n</m>th-order ordinary differential equation is said to be <alert>linear</alert> if <m>F</m>, from equation <xref ref="eq-F"/>, is linear in <m>y, y', \dots, y^{(n)}</m>. This means if an ODE is linear, it can be written in the form 
+        <me>
+          a_n(x)\dfrac{d^ny}{dx^n}+a_{n-1}(x)\dfrac{d^{n-1}y}{dx^{n-1}}+ \cdots + a_1(x)\dfrac{dy}{dx}+a_0(x)y-g(x)=0
+        </me>.
+        <m>\vspace{1.5cm}</m>
+      </p>
+    </statement>
+
+    <statement>
+      <p>
+        In simpler terms, if an ODE is linear, the following two properties will hold:
+        <ul>
+          <li>
+            <p>
+              The dependent variable <m>y</m> and all its derivatives <m>y', y'', \dots, y^{(n)}</m> are of the first degree (i.e., the power of each term involving a <m>y</m> must be 1).
+              <m>\vspace{0.75cm}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              The coefficients <m>a_0, a_1, \dots, a_n$ of $y, y', \dots, y^{(n)}</m> depend at most on the independent variable <m>x</m>.
+            </p>
+          </li>
+        </ul>
+        If these conditions are not met, the ODE is referred to as <m>\underline{\hspace{4cm}}</m>. 
+      </p>
+    </statement>
+
+    <example>
+      <p>
+        Determine if the following (ordinary) differential equations are linear or nonlinear and state the order. If nonlinear, identify the term(s) causing the nonlinearity. 
+      </p>
+      <task workspace="0.5in">
+        <statement>
+          <p>
+            <m>(y-x)+4x \dfrac{dy}{dx}=0</m>
+          </p>
+        </statement>
+      </task>
+      <task workspace="0.5in">
+        <statement>
+          <p>
+            <m>y''-2y'+y=0</m>
+          </p>
+        </statement>
+      </task>
+      <task workspace="0.5in">
+        <statement>
+          <p>
+            <m>(1-y)y'+2y=e^x</m>
+          </p>
+        </statement>
+      </task>
+      <task workspace="0.5in">
+        <statement>
+          <p>
+            <m>\dfrac{d^2y}{dx^2}+\sin y = 0</m>
+          </p>
+        </statement>
+      </task>
+      <task workspace="0.5in">
+        <statement>
+          <p>
+            <m>x^3\dfrac{d^3y}{dx^3}+x\dfrac{dy}{dx}-5y=e^x</m>
+          </p>
+        </statement>
+      </task>
+      <task workspace="0.5in">
+        <statement>
+          <p>
+            <m>\dfrac{d^4y}{dx^4}+y^2=0</m>
+          </p>
+        </statement>
+      </task>
+    </example>
+  </page>
+
+  <page>
+    <statement>
+      <p>
+        Recall that the solution to a differential equation is a <alert>function</alert>. 
+      </p>
+    </statement>
+
+    <definition>
+      <statement>
+        <p>
+          Any function <m>\phi</m>, defined on an interval <m>I</m> and possessing at least $n$ derivatives that are continuous on <m>I</m>, that when substituted into an <m>n</m>th-order ordinary differential equation reduces the equation to an identity, is said to be a <m>\underline{\hspace{4cm}}</m> of the equation on the interval <m>I</m>.
+        </p>
+        <p>
+          The interval <m>I</m> can be referred to as the interval of definition, interval of existence, interval of validity, or domain of the solution. The interval can be open <m>(a,b)</m>, closed <m>[a,b]</m>, infinite <m>(a,\infty)</m>, etc.
+        </p>
+      </statement>
+    </definition>
+
+    <example>
+      <statement>
+        <p>
+          Verify that the indicated function is a solution of the given differential equation on the interval <m>(-\infty, \infty)</m>.
+        </p>
+      </statement>
+
+      <statement>
+        <ol>
+          <li>
+            <p>
+              <m>\dfrac{dy}{dx} = xy^{1/2}; \hspace{.4cm} y=\frac{1}{16}x^4</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>y''-2y'+y=0; \hspace{.4cm} y=xe^x</m>
+            </p>
+          </li>
+        </ol>
+      </statement>
+      <note>
+        Both (a) and (b) can be satisfied by the solution 
+      </note>
+    </example>
+
+    <definition>
+      <statement>
+        <p>
+          A solution in which the dependent variable (often <m>y</m>) is expressed solely in terms of the independent variable and constants is an <m>\underline{\hspace{7cm}}</m>. \\
+        </p>
+      </statement>
+
+      <statement>
+        <p>
+          An <m>\underline{\hspace{7cm}}</m> is a solution that is not solved for the dependent variable but that still satisfies the differential equation. 
+        </p>
+      </statement>
+    </definition>
+  </page>
 </worksheet>
 
 
 
 <!-- 
 
-
-\end{itemize}
-
-\textbf{(2) Classification by order}:\\
-The \textbf{order} of a differential equation (ODE or PDE) is the 
-\vspace{3cm}
-
-In symbols, we can write an $n$th-order ordinary differential equation in one dependent variable $x$ in the general form 
-\begin{eqnarray}
-\label{F} F(x,y,y',\dots,y^{(n)})=0,
-\end{eqnarray}
-where $F$ is a real-value function of $n+2$ variables. \\
-\vspace{.5cm}
-
-The differential equation $$\dfrac{d^n y}{dx^n}=f(x,y,y',\dots,y^{(n-1)}),$$ where $f$ is a real-valued continuous function, is referred to as the \underline{\hspace{7cm}}. 
-\vfill
-
-\begin{example}
-Solve for the $n$th derivative so that the differential equation is in normal form.
-\begin{multicols}{2}
-\begin{enumerate}[(a)]
-    \item $4x\dfrac{dy}{dx}+y=x$
-    \item $y''-y'+6=0$
-\end{enumerate}
-\end{multicols}
-\end{example}
-
-\vspace{0.75cm}
-
-\pagebreak
-
-\textbf{(3) Classification by linearity}: \\
-An $n$th-order ordinary differential equation is said to be \textbf{linear} if $F$, from equation \eqref{F}, is linear in $y, y', \dots, y^{(n)}$. This means if an ODE is linear, it can be written in the form $$a_n(x)\dfrac{d^ny}{dx^n}+a_{n-1}(x)\dfrac{d^{n-1}y}{dx^{n-1}}+ \cdots + a_1(x)\dfrac{dy}{dx}+a_0(x)y-g(x)=0. $$
-\vspace{1.5cm}
-
-In simpler terms, if an ODE is linear, the following two properties will hold:
-\begin{itemize}
-\item The dependent variable $y$ and all its derivatives $y', y'', \dots, y^{(n)}$ are of the first degree (i.e., the power of each term involving a $y$ must be 1).\\
-\vspace{.75cm}
-
-\item The coefficients $a_0, a_1, \dots, a_n$ of $y, y', \dots, y^{(n)}$ depend at most on the independent variable $x$.\\
-
-\end{itemize}
-
-If these conditions are not met, the ODE is referred to as \underline{\hspace{4cm}}. 
-
-\begin{example}
-Determine if the following (ordinary) differential equations are linear or nonlinear and state the order. If nonlinear, identify the term(s) causing the nonlinearity. 
-
-\begin{enumerate}
-\item $(y-x)+4x \dfrac{dy}{dx}=0$ 
-\vfill
-
-\item $y''-2y'+y=0$ 
-\vfill
-
-\item $(1-y)y'+2y=e^x$
-\vfill
-
-\item $\dfrac{d^2y}{dx^2}+\sin y = 0$
-\vfill
-
-\item $x^3\dfrac{d^3y}{dx^3}+x\dfrac{dy}{dx}-5y=e^x$ 
-\vfill
-
-\item $\dfrac{d^4y}{dx^4}+y^2=0$ 
-\vfill
-\end{enumerate}
-\end{example}
-
-\pagebreak 
-
-Recall that the solution to a differential equation is a \textit{function}. 
-
-\begin{defs}
-Any function $\phi$, defined on an interval $I$ and possessing at least $n$ derivatives that are continuous on $I$, that when substituted into an $n$th-order ordinary differential equation reduces the equation to an identity, is said to be a \underline{\hspace{4cm}} of the equation on the interval $I$. \\
-
-The interval $I$ can be referred to as the interval of definition, interval of existence, interval of validity, or domain of the solution. The interval can be open $(a,b)$, closed $[a,b]$, infinite $(a,\infty)$, etc.
-\end{defs}
-
-\begin{example}
-Verify that the indicated function is a solution of the given differential equation on the interval $(-\infty, \infty)$.
-\begin{enumerate}[(a)]
-\item $\dfrac{dy}{dx} = xy^{1/2}; \hspace{.4cm} y=\frac{1}{16}x^4$ 
-\vspace{3cm}
-
-\item $y''-2y'+y=0; \hspace{.4cm} y=xe^x$ 
-\vspace{6cm}
-\end{enumerate}
-\end{example}
-
-\underline{Note}: Both (a) and (b) can be satisfied by the solution 
-\vspace{1cm}
-
-\begin{defs}
-A solution in which the dependent variable (often $y$) is expressed solely in terms of the independent \smallskip variable and constants is an \underline{\hspace{7cm}}. \\
-\vfill
-
-An \underline{\hspace{7cm}} is a solution that is not solved for the dependent variable but that still satisfies the differential equation. 
 \vfill
 \end{defs}
 
