@@ -4,9 +4,9 @@
   <!-- we first include a file which contains the docinfo element: -->
   <xi:include href="./docinfo.ptx" />
 
-  <article xml:id="math240-syllabus">
-    <title>Spring 2025 Syllabus</title>
-    <subtitle>MATH/COMP SCI 240</subtitle>
+  <article xml:id="MAT2705-syllabus">
+    <title>Differential Equations with Linear Algebra</title>
+    <subtitle>Fall 2025</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
@@ -14,6 +14,28 @@
     <!-- Include chapters -->
     <section xml:id="sec-course-info">
       <title>Course Information</title>
+      <p>
+        <dl>
+          <li>
+            <title>Goals</title>
+            <p>
+              This course seeks to familiarize students with the general ideas of ordinary differential equations and linear systems of such equations, while introducing elementary notions of linear algebra which facilitate the understanding of linear differential equations, either alone or in systems. Emphasis is on first- and second-order differential equations, those which most frequently occur in applications.
+            </p>
+          </li>
+          <li>
+            <title>Objectives</title>
+            <p>
+               First-order differenital equations provide a view of the geometric setting of differential equations through the directionfield, and a taste of solution techniques through the two most commonly occurs first-order differential equation types: separabel and linear. Students hsould be able to interpret a directionfield plot, and know whether a first-order differential equation is separable or linear (in either variable) or neither, and should be able to apply their respective solution algorithms when they are appropriate and the algebraic/calculus operations involved are reasonable, and understand the difference between explicit and implicit solutions.
+            </p>
+            <p>
+              Students should be able to solve homogeneous second-order constant coefficient differential equations and understand the different kinds of solutions which are possible, including complex characteristic values. (If the current text handles differential equations of any order in this context, emphasis should be on the less exotic possibilities, as in the method of undetermined coefficients, for example.) They should be able to use the method of undeterminedd coefficients for reasonable driving functions in the nonhomogeneous case and understand the difference between the undetermined coefficients of the technique and the arbitrary constants which appear in the solution. Since the harmonically driven damped harmonic oscillator system is the single most important application of this and connects somewhat to their intuition and prior knowledge from high school physics, it is reasonable that it be used as an example for them. The opportunity to discuss resonance also sets the stage for real applications of eigenvalue analysis (modal analysis) in the linear system case, while the interpretation of the steady state and transient parts of the solution give a physical setting to the mathematical distinction between the homogeneous and nonhomogeneous terms.
+            </p>
+            <p>
+              In order to appreciate systems of differential equations as well as the nature of higher order linear differential equations, students must acquire some familiarity with matrix algebra and matrix techniques for solving linear systems of equations, including row reduced echelon form with backsubstitution, the determinant (without exaggerating computational techniques), and inverse matrices. Then students should digest the idea of vector spaces, subpaces, span, linear independence and dependence, bases and dimension, with the emphasis on <m>\mathbb{R}^n</m>
+            </p>
+          </li>
+        </dl>
+      </p>
       <p>
         <dl>
           <li>
