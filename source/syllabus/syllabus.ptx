@@ -614,5 +614,9 @@
       The full text of all of these statements can be found in <url href="https://guide.wisc.edu/courses/#syllabustext" visual="guide.wisc.edu/courses/#syllabustext">the Guide</url>.
     </p>
   </section>
+
+  <!-- Include backmatter -->
+  <xi:include href="./backmatter.ptx" />
+
   </article>
 </pretext>

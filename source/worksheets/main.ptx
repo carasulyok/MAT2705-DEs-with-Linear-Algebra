@@ -5,22 +5,22 @@
   <xi:include href="./docinfo.ptx" />
   
   <article xml:id="math240-syllabus">
-    <title>Worksheet Examples</title>
-    <subtitle>MATH/COMP SCI 240</subtitle>
+    <title>Differential Equations with Linear Algebra</title>
+    <subtitle>Note-Taking Guides</subtitle>
     
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
     
     <!-- Include chapters -->
     <section xml:id="sec-course-info">
-      <title>Some Examples</title>
+      <title>Unit 1</title>
       
       <xi:include href="./wkst-relns-digraphs.ptx" />
       <xi:include href="./wkst-eqrel-counting.ptx" />
       
     </section>
     <solutions worksheet="solution">
-      <title>Solutions to Worksheets</title>
+      <title>Completed Note-Taking Guides</title>
     </solutions>
     
   </article>
