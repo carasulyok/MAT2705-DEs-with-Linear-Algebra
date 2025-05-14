@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<worksheet margin="1in">
+  <title>Introduction to Differential Equations</title>
+  <page>
+
+    <objectives>
+      <introduction>
+        <p>
+          	To learn the basics of what defines a differential equation, the different ways in which it can be classified, and how to verify its solutions.
+        </p>
+      </introduction>
+    </objectives>
+    
+    <axiom>
+      <statement>
+        <p>
+          The derivative <m>dy/dx</m> of a function <m>y=\phi(x)</m> is itself a <m>\underline{\hspace{5cm}}</m> (found by an appropriate rule).
+        </p>
+      </statement>
+    </axiom>
+
+    <exercise workspace="1in">
+      <statement>
+        <p>
+          Consider the function <m>y=e^{0.1x^2}</m>. What is its derivative <m>dy/dx</m>? 
+        </p>
+      </statement>
+    </exercise>
+
+  <task workspace="2.5cm">
+    <statement>
+      <p>
+        Imagine that someone hands you the equation you just obtained (without you having any idea how it was constructed or what the original function <m>y</m> was). Determining the original function <m>y</m> is one of the basic problems in this course: 
+      </p>
+    </statement>
+  </task>
+
+  <statement>
+    <p>
+      How do you solve an equation such as <m>\dfrac{dy}{dx} = 0.2xy</m> for the function <m>y=\phi(x)</m>?
+    </p>
+  </statement>
+
+  <definition>
+    <statement>
+      <p>
+        A <alert>differential equation (DE)</alert> is an equation containing
+      </p>
+    </statement>
+  </definition>
+
+  <!-- insert 3cm -->
+
+  <definition>
+    <statement>
+      <p>
+        <alert>Notation</alert>
+        <ul>
+          <li>
+            <p>
+              Leibniz notation
+            </p>
+          </li>
+          <li>
+            <p>
+              Prime notation
+            </p>
+          </li>
+          <li>
+            <p>
+              Dot notation
+            </p>
+          </li>
+          <li>
+            <p>
+              Subscript notation
+            </p>
+          </li>
+        </ul>
+      </p>
+    </statement>
+  </definition>
+
+  </page>
+
+  <page>
+    
+   <statement>
+    <p>
+      Differential equations can be classified according to (1) type, (2) order, and (3) linearity.
+    </p>
+  </statement>
+
+  <statement>
+    <p>
+      <alert>(1) Classification by type</alert>
+      <ol>
+        <li>
+          <p>
+            <m>\underline{\hspace{8cm}}</m> contain only ordinary derivatives of one or more unknown functions with respect to a <em>single</em> independent variable. 
+            <m>\vspace{2cm}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+             <m>\underline{\hspace{8cm}}</m> involve partial derivatives of one or more unknown functions of two or more independent variables.
+             <m>\vspace{2cm}</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  
+    
+
+  </page>
+
+</worksheet>
+
+
+
+<!-- 
+
+
+\end{itemize}
+
+\textbf{(2) Classification by order}:\\
+The \textbf{order} of a differential equation (ODE or PDE) is the 
+\vspace{3cm}
+
+In symbols, we can write an $n$th-order ordinary differential equation in one dependent variable $x$ in the general form 
+\begin{eqnarray}
+\label{F} F(x,y,y',\dots,y^{(n)})=0,
+\end{eqnarray}
+where $F$ is a real-value function of $n+2$ variables. \\
+\vspace{.5cm}
+
+The differential equation $$\dfrac{d^n y}{dx^n}=f(x,y,y',\dots,y^{(n-1)}),$$ where $f$ is a real-valued continuous function, is referred to as the \underline{\hspace{7cm}}. 
+\vfill
+
+\begin{example}
+Solve for the $n$th derivative so that the differential equation is in normal form.
+\begin{multicols}{2}
+\begin{enumerate}[(a)]
+    \item $4x\dfrac{dy}{dx}+y=x$
+    \item $y''-y'+6=0$
+\end{enumerate}
+\end{multicols}
+\end{example}
+
+\vspace{0.75cm}
+
+\pagebreak
+
+\textbf{(3) Classification by linearity}: \\
+An $n$th-order ordinary differential equation is said to be \textbf{linear} if $F$, from equation \eqref{F}, is linear in $y, y', \dots, y^{(n)}$. This means if an ODE is linear, it can be written in the form $$a_n(x)\dfrac{d^ny}{dx^n}+a_{n-1}(x)\dfrac{d^{n-1}y}{dx^{n-1}}+ \cdots + a_1(x)\dfrac{dy}{dx}+a_0(x)y-g(x)=0. $$
+\vspace{1.5cm}
+
+In simpler terms, if an ODE is linear, the following two properties will hold:
+\begin{itemize}
+\item The dependent variable $y$ and all its derivatives $y', y'', \dots, y^{(n)}$ are of the first degree (i.e., the power of each term involving a $y$ must be 1).\\
+\vspace{.75cm}
+
+\item The coefficients $a_0, a_1, \dots, a_n$ of $y, y', \dots, y^{(n)}$ depend at most on the independent variable $x$.\\
+
+\end{itemize}
+
+If these conditions are not met, the ODE is referred to as \underline{\hspace{4cm}}. 
+
+\begin{example}
+Determine if the following (ordinary) differential equations are linear or nonlinear and state the order. If nonlinear, identify the term(s) causing the nonlinearity. 
+
+\begin{enumerate}
+\item $(y-x)+4x \dfrac{dy}{dx}=0$ 
+\vfill
+
+\item $y''-2y'+y=0$ 
+\vfill
+
+\item $(1-y)y'+2y=e^x$
+\vfill
+
+\item $\dfrac{d^2y}{dx^2}+\sin y = 0$
+\vfill
+
+\item $x^3\dfrac{d^3y}{dx^3}+x\dfrac{dy}{dx}-5y=e^x$ 
+\vfill
+
+\item $\dfrac{d^4y}{dx^4}+y^2=0$ 
+\vfill
+\end{enumerate}
+\end{example}
+
+\pagebreak 
+
+Recall that the solution to a differential equation is a \textit{function}. 
+
+\begin{defs}
+Any function $\phi$, defined on an interval $I$ and possessing at least $n$ derivatives that are continuous on $I$, that when substituted into an $n$th-order ordinary differential equation reduces the equation to an identity, is said to be a \underline{\hspace{4cm}} of the equation on the interval $I$. \\
+
+The interval $I$ can be referred to as the interval of definition, interval of existence, interval of validity, or domain of the solution. The interval can be open $(a,b)$, closed $[a,b]$, infinite $(a,\infty)$, etc.
+\end{defs}
+
+\begin{example}
+Verify that the indicated function is a solution of the given differential equation on the interval $(-\infty, \infty)$.
+\begin{enumerate}[(a)]
+\item $\dfrac{dy}{dx} = xy^{1/2}; \hspace{.4cm} y=\frac{1}{16}x^4$ 
+\vspace{3cm}
+
+\item $y''-2y'+y=0; \hspace{.4cm} y=xe^x$ 
+\vspace{6cm}
+\end{enumerate}
+\end{example}
+
+\underline{Note}: Both (a) and (b) can be satisfied by the solution 
+\vspace{1cm}
+
+\begin{defs}
+A solution in which the dependent variable (often $y$) is expressed solely in terms of the independent \smallskip variable and constants is an \underline{\hspace{7cm}}. \\
+\vfill
+
+An \underline{\hspace{7cm}} is a solution that is not solved for the dependent variable but that still satisfies the differential equation. 
+\vfill
+\end{defs}
+
+\pagebreak
+
+% \begin{example}
+% Verify that $x^2+y^2=25$ is a solution of the differential equation $\dfrac{dy}{dx}=-\dfrac{x}{y}$ on the open interval $(-5,5)$. Obtain an explicit solution. 
+% \end{example}
+
+% \vfill
+
+% \begin{example}
+% Verify that the functions $x=c_1 \cos(4t)$ and $x=c_2 \sin(4t)$, where $c_1$ and $c_2$ are arbitrary constants or parameters, are both solutions of the linear differential equation $x''+16x=0$.
+% \end{example}
+
+% \vfill
+
+% \pagebreak
+
+\textbf{Homework Exercises}
+
+\begin{enumerate}
+\item For each of the following differential equations, state the order and determine whether the equation is linear or nonlinear. Identify the independent and dependent variables. 
+\begin{enumerate}[(a)]
+\item $x \dfrac{d^3y}{dx^3}-\left (\dfrac{dy}{dx}\right)^4+y=0$ 
+\item $\dfrac{d^2u}{dr^2}+\dfrac{du}{dr}+u=\cos(r+u)$ 
+\item $(1-x)y''-4xy'+5y=\cos{x}$ 
+\item $t^5y^{(4)}-t^3y''+6y=0$ 
+\item $(\sin{\theta})y'''-(\cos{\theta})y'=2$ 
+\end{enumerate} 
+
+\item Verify that the indicated function is an explicit solution of the given differential equation. 
+$$y'+35y=56; \hspace{1cm} y=\dfrac{8}{5}-\dfrac{8}{5}e^{-35t}$$ 
+
+\item Verify that the indicated family of functions is a solution of the given differential equation.
+$$\dfrac{d^2y}{dx^2}-8\dfrac{dy}{dx}+16y=0; \hspace{1cm} y=c_1e^{4x}+c_2xe^{4x}$$ 
+
+\item Find the value(s) of $m$ so that the function $y=e^{mx}$ is a solution of $y''-5y'+6y=0$.
+\end{enumerate}
+
+\textbf{Additional Exercises}
+\begin{enumerate}
+    \setcounter{enumi}{4}
+    \item For each of the following differential equations, state the order and determine whether the equation is linear or nonlinear. Identify the independent and dependent variables. 
+    \begin{enumerate}[(a)]
+        \item $5 \dfrac{d^2x}{dt^2}+4\dfrac{dx}{dt}+9x=2\cos(3t)$
+        \item $\dfrac{dy}{dx}=\dfrac{y(2-3x)}{x(1-3y)}$
+        \item $y\left [ 1 + \left(\dfrac{dy}{dx}\right)^2\right ]=C$, where $C$ is a constant
+        \item $\dfrac{\partial^2 u}{\partial x^2}+\dfrac{\partial^2 u}{\partial y^2}=0$ 
+        \item $8\dfrac{d^4 y}{dx^4}=x(1-x)$
+    \end{enumerate}
+    
+    \item Verify that the indicated function is an explicit solution of the given differential equation.
+    $$y''+y=\tan x; \hspace{1cm} y=-(\cos x)\ln(\sec x + \tan x)$$
+
+    \item Find the value(s) of $m$ so that the function $y=x^m$ is a solution of $xy'' + 2y'=0$.
+\end{enumerate}
+
+\pagebreak
+
+\textbf{Selected Answers}
+
+\begin{enumerate}
+\item 
+% \begin{enumerate}[(a)]
+% \item Order 3, nonlinear (Dependent variable is $y$ and independent variable is $x$) 
+% \item Order 2, nonlinear (Dependent variable is $u$ and independent variable is $r$) 
+% \item Order 2, linear (Dependent variable is $y$ and independent variable is $x$)
+% \item Order 4, linear (Dependent variable is $y$ and independent variable is $t$)
+% \item Order 3, linear (Dependent variable is $y$ and independent variable is $\theta$) 
+% \end{enumerate} 
+
+\item By finding $dy/dt=56e^{-35t},$ you can verify this is a solution. 
+
+\item Note that $dy/dx=4c_1e^{4x}+4c_2xe^{4x}+c_2e^{4x}$ and $y''=16c_1e^{4x}+c_2(16xe^{4x}+8e^{4x})$. 
+
+\item $m=2$, $m=3$
+
+\item 
+\begin{enumerate}[(a)]
+\item Order 2, linear (Dependent variable is $x$ and independent variable is $t$) 
+\item Order 1, nonlinear (Dependent variable is $y$ and independent variable is $x$) 
+\item Order 1, nonlinear (Dependent variable is $y$ and independent variable is $x$)
+\item This is the only PDE! Order 2, linear (Dependent variable is $u$ and independent variables are $x$ and $y$)
+\item Order 4, linear (Dependent variable is $y$ and independent variable is $x$) 
+\end{enumerate} 
+
+\item 
+
+\item $m=0$, $m=-1$
+\end{enumerate}
+
+\end{document}  -->

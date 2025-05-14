@@ -15,6 +15,9 @@
     <section xml:id="sec-course-info">
       <title>Unit 1</title>
       
+      <!-- Introduction to Differential Equations -->
+      <xi:include href="./NTG-Introduction-to-Differential-Equations.ptx" />
+
       <xi:include href="./wkst-relns-digraphs.ptx" />
       <xi:include href="./wkst-eqrel-counting.ptx" />
       
