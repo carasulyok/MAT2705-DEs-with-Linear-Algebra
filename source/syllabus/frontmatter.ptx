@@ -4,14 +4,14 @@
 <!-- works. -->
 
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
-  <bibinfo>
+  <!-- <bibinfo>
     <author>
       <personname>Dr. Cara J. Sulyok</personname>
       <department>Department of Mathematics and Statistics</department>
       <institution>Villanova University</institution>
     </author>
     
-  </bibinfo>
+  </bibinfo> -->
 
   <titlepage>
     <titlepage-items/>

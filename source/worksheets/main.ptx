@@ -18,6 +18,12 @@
       <!-- Introduction to Differential Equations -->
       <xi:include href="./NTG-Introduction-to-Differential-Equations.ptx" />
 
+      <!-- Separable Equations -->
+      <xi:include href="./NTG-Separable-Equations.ptx" />
+
+      <!-- Integrating Factor -->
+      <xi:include href="./NTG-Integrating-Factor.ptx" />
+
       <xi:include href="./wkst-relns-digraphs.ptx" />
       <xi:include href="./wkst-eqrel-counting.ptx" />
       

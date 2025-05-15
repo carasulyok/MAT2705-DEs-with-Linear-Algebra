@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<worksheet margin="1in">
+    <title>Separable Equations</title>
+    <page>
+
+    <p>
+        <em> <alert>Goal:</alert> </em> To solve first-order separable differential equations.
+    </p>
+
+    <p>
+        <alert>Warm-up Exercise:</alert> Integrate <m>y'(x) = 1+e^{2x}</m>.
+    </p>
+
+    <p>
+        <em> <alert>Separable Equations</alert> </em>
+    </p>
+    A first-order differential equation of the form <m>\dfrac{dy}{dx}=g(x)h(y)</m> is said to be <em> </em>.
+    <p>
+    </p>
+
+    <example>
+        <statement>
+            <p>
+                Solve <m>(1+x)\dfrac{dy}{dx}-y=0</m>.
+                Find the explicit solution.
+            </p>
+        </statement>
+    </example>
+
+    <p>
+    </p>
+
+    <example>
+        <statement>
+            <p>
+                Solve the initial value problem <m>\dfrac{dy}{dx}=-\dfrac{x}{y},</m> <m>y(4)=-3.</m>
+            </p>
+        </statement>
+    </example>
+
+    <p>
+    </p>
+
+    <example>
+        <statement>
+            <p>
+                Solve <m>(e^{2y}-y)\cos x \dfrac{dy}{dx}= e^{y} \sin 2x,</m> <m>y(0)=0.</m>
+            </p>
+        </statement>
+    </example>
+
+    <p>
+    </p>
+
+    <p>
+    </p>
+
+    <p>
+        Implicit solutions can be frustrating because neither the graph of the equation nor an interval over which a solution satisfying <m>y(0)=0</m> is defined is apparent.
+        The problem of “seeing” what an implicit solution looks like can sometimes be overcome using technology.
+    </p>
+
+    <p>
+        <alert>Recall</alert>: For a function of two variables <m>z=G(x,y)</m>, the <em>two-dimensional</em> curves defined by <m>G(x,y)=c</m>, where <m>c</m> is a constant, are called the <em>level curves</em> of the function.
+    </p>
+
+    <image source="LevelCurves1.png">
+    </image>
+
+    <p>
+    </p>
+
+    <image source="LevelCurves2.png">
+    </image>
+
+    <p>
+    </p>
+
+    <p>
+    </p>
+
+    <p>
+        <alert>Homework Exercises</alert>
+    </p>
+
+    <ol>
+        <li>
+            <p>
+                Solve the following differential equations using separation of variables.
+                <ol>
+                    <li>
+                        <p>
+                            <m>dy-(y-4)^{2}dx=0</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>e^{x}y\dfrac{dy}{dx}=e^{-y}+e^{-7x-y}</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>\dfrac{dy}{dx}=\left(\dfrac{2y+5}{6x+7}\right)^{2}</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>\dfrac{dN}{dt}+N=Nte^{t+5}</m>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </li>
+
+        <li>
+            <p>
+                Find an explicit solution of the following initial-value problem.
+                <me>
+                    \dfrac{dy}{dx}=\dfrac{y^2-1}{x^2-1}, \hspace{.7cm}y(9)=9
+                </me>
+            </p>
+        </li>
+
+        <li>
+            <p>
+                Find an explicit solution of the following initial-value problem.
+                <me>
+                    (1+x^{4})dy+x(1+4y^{2})dx=0, \hspace{.7cm}y(1)=0
+                </me>
+            </p>
+        </li>
+    </ol>
+
+    <p>
+        <alert>Additional Exercises</alert>
+    </p>
+
+    <ol>
+        <li>
+            <p>
+                Solve the following differential equations using separation of variables.
+                <ol>
+                    <li>
+                        <p>
+                            <m>\dfrac{dy}{dx}=x(y^{2}+9)</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>(xy^{2}+x)dx +e^{x}dy=0</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>\dfrac{dy}{dx}=y^{2}</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>\dfrac{dy}{dx}=\dfrac{2}{x(y^3+1)}</m>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </li>
+
+        <li>
+            <p>
+                Find an explicit solution of the following initial-value problem.
+                <me>
+                    e^{x} dx - y dy = 0, \hspace{.7cm}y(0)=-1
+                </me>
+            </p>
+        </li>
+    </ol>
+
+    <p>
+        <alert>Selected Answers</alert>
+    </p>
+
+    <ol>
+        <li>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            <m>y=4-\dfrac{1}{C+x}</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>\dfrac{e^{-8x}}{8}+e^{-x}+e^{y}y-e^{y}=C</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>\dfrac{3}{2y+5}=C+\dfrac{1}{6x+7}</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>N(t)=Ce^{te^{t+5}-t-e^{t+5}}</m>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </li>
+
+        <li>
+            <p>
+                <m>y=x</m>
+            </p>
+        </li>
+
+        <li>
+            <p>
+                <m>y=\dfrac{1-x^2}{2(x^2+1)}</m> (<em>Hints:</em> (1) When you go to integrate the side with <m>y</m>, do a <m>u</m>-substitution with <m>y=\frac{1}{2}u</m>. This will help you get a constant of <m>\frac{1}{2}</m> in front to help with cancellations later on when you will need: (2) to use the fact that <m>\tan^{-1}(a)+\tan^{-1}(b)=\tan^{-1}\left(\dfrac{a+b}{1-ab}\right)</m> if <m>ab&#x3C;1</m>. You do not need to show that <m>ab&#x3C;1</m> for this particular problem, but it would only be a few steps to verify that we satisfy this condition.)
+            </p>
+        </li>
+
+        <li>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            <m>y=3\tan (\frac{3}{2}x^{2}+C)</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>y=\tan(xe^{-x}+e^{-x}+C)</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>y=-\dfrac{1}{x+C}</m> and <m>y=0</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>\dfrac{y^4}{4}+y-2\ln |x| = C</m>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </li>
+
+        <li>
+            <p>
+                <m>y=-\sqrt{2e^{x}-1}</m>
+            </p>
+        </li>
+    </ol>
+
+    </page>
+</worksheet>

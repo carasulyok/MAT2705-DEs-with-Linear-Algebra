@@ -11,6 +11,26 @@
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
 
+    <section xml:id="sec-instructor-info">
+      <title>Instructor Information</title>
+      <p>
+        <dl>
+          <li>
+            <title>Instructor</title>
+            <p>
+              Dr. Cara Sulyok
+            </p>
+          </li>
+          <li>
+            <title>Email</title>
+            <p>
+              <url href="mailto:cara.sulyok@villanova.edu" visual="cara.sulyok@villanova.edu">cara.sulyok@villanova.edu</url>
+            </p>
+          </li>
+        </dl>
+      </p>
+    </section>
+
     <!-- Include chapters -->
     <section xml:id="sec-course-info">
       <title>Course Information</title>
