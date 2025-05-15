@@ -31,13 +31,35 @@
               Students should be able to solve homogeneous second-order constant coefficient differential equations and understand the different kinds of solutions which are possible, including complex characteristic values. (If the current text handles differential equations of any order in this context, emphasis should be on the less exotic possibilities, as in the method of undetermined coefficients, for example.) They should be able to use the method of undeterminedd coefficients for reasonable driving functions in the nonhomogeneous case and understand the difference between the undetermined coefficients of the technique and the arbitrary constants which appear in the solution. Since the harmonically driven damped harmonic oscillator system is the single most important application of this and connects somewhat to their intuition and prior knowledge from high school physics, it is reasonable that it be used as an example for them. The opportunity to discuss resonance also sets the stage for real applications of eigenvalue analysis (modal analysis) in the linear system case, while the interpretation of the steady state and transient parts of the solution give a physical setting to the mathematical distinction between the homogeneous and nonhomogeneous terms.
             </p>
             <p>
-              In order to appreciate systems of differential equations as well as the nature of higher order linear differential equations, students must acquire some familiarity with matrix algebra and matrix techniques for solving linear systems of equations, including row reduced echelon form with backsubstitution, the determinant (without exaggerating computational techniques), and inverse matrices. Then students should digest the idea of vector spaces, subpaces, span, linear independence and dependence, bases and dimension, with the emphasis on <m>\mathbb{R}^n</m>
+              In order to appreciate systems of differential equations as well as the nature of higher order linear differential equations, students must acquire some familiarity with matrix algebra and matrix techniques for solving linear systems of equations, including row reduced echelon form with backsubstitution, the determinant (without exaggerating computational techniques), and inverse matrices. Then students should digest the idea of vector spaces, subpaces, span, linear independence and dependence, bases and dimension, with the emphasis on <m>\mathbb{R}^n</m> spaces only (and perhaps in passing back to differential equation, metniod of the polynomial spaces) and while discussing higher-order differential equations, solutions spaces of linear homogeneous differential equations as examples, in order to understand the linear aspects of the eigenvalue technique for solving linear (homogeneous) systems of ordinary dfferential equations (with diagonalizable coefficient matrices). It seems reasonable and expected that they should be able to handle complex eigenvalues and eigenvectors in this process. Optionally, some exposure to simply nonhomogeneous systems can give them insight into more complicated applications of this process.
+            </p>
+            <p>
+              A valuable capstone topic is the treatment of a coupled system of harmonic oscillators, where reduction of order shows them how one handles higher-order linear systems, the second order case being extremely important for dynamics. Whether or not this is requried material for testing, it gives an arena where their intuition about vibrating objects helps them see this eigenvalue technique as a more concrete activity, building on the simple harmonic oscillator problem.
+            </p>
+          </li>
+          <li>
+            <title>Matrix Linear Algebra Note</title>
+            <p>
+              In addition to supporting the linear foundations of the differential equations studied in this course, the matrix mathematics covered here also provides many students in their own exposure to a careful treatment of solving linear systems of equations using row reduction methods. They should thoroughly understand the reduction process, and the backsubstition steps from the reduced matrix to the parameterized solution of a linear system of equations <m>A\vec{x}=\vec{b}</m>, utilizing technology for the row echelon reduction process once understoof. Going further, they should also understand the interpretation of a nonhomogeneous linear syttem <m>A\vec{x}=\vec{b}</m> as resolving the problem of finding the most general coefficients of a linear combination of the columns of the coefficient matrix <m>A</m> which eqals the vector <m>b</m>:
+              <me>
+                x^1Col(A,1)+\cdots+x^nCol(A,n)=b
+              </me>.
+              Correspondingly, they should understand the interpretation of the solution of a homogeneous linear system <m>A\vec{x}=\vec{0}</m> as finding the most general coefficients of a linear combination of the columns of <m>A</m> which is the zero vector, i.e., a linear relationship among those vectors when nonzero. Each free variable (replaced by a parameter in writing down the solution) in the general solution multiples a vector of coefficients representing an independent such linear relationship among those vectors.
+            </p>
+          </li>
+          <li>
+            <title>Maple Use</title>
+            <p>
+              All students should learn quickly how to input any combination of differential equations and initial conditions in standard prime derivative notation and how to solve them using the context-sensitive menu choice <q>Solve DE</q>. The course shoudl test the solution algorithms and how to interpret what the solutions mean and what structure they have. Knowing the solution is a good check.
+            </p>
+            <p>
+              Similarly, any matrix is easy to input from the Matrix palette and the context-sensitive menu enables the student to find its row reduced form, calculate its determinant and inverse if appropriate (simply a <q><m>-1</m></q> superscript on the matrix!), and eigenvectors and eigenvalues. The LinearSolveTutor with the Gauss-Jordan reduction choice from teh Student[LinearAlgebra] package (available directly from the Tutors menu) should be highlighted in learning the matrix reduction process and in solving linear systems. Matrix multiplication to confirm diagonalization of a square matrix using the matrix of eigenvalues and its inverse is trivial in standard math notation in the Maple input region.
             </p>
           </li>
         </dl>
       </p>
-      <p>
-        <dl>
+      <!--  <p>
+       <dl>
           <li>
             <title>Course Description</title>
             <p>
@@ -132,15 +154,13 @@
         <p>
           This class meets for two 75-minute lectures and one 50-minute discussion each week over the  semester and carries the expectation that students will work on course learning activities (e.g. reading, problem sets, papers, and studying) for about six hours outside of classroom per week. The syllabus includes more information about meeting times and expectations for student work.
         </p>
-      </paragraphs>
-    </section>
-    <section xml:id="sec-staff" xmlns:xi="http://www.w3.org/2001/XInclude">
-      <title>Course Staff</title>
-      <subsection>
-        <title>Instructor</title>
-        <paragraphs>
-          <title>Dr. Mitch Keller</title>
-          <aside component="online">
+      </paragraphs> -->
+    </section> 
+    <section xml:id="instructor" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <title>Instructor</title>
+      <paragraphs>
+          <title>Dr. Cara J. Sulyok</title>
+          <!-- <aside component="online">
             <p>
               My pronouns are he/him/his.
               I ask that you address me as <q>Prof. Keller</q> or <q>Dr.
@@ -152,109 +172,32 @@
               Therefore, in solidarity with my colleagues of all identities and backgrounds, <q>Prof.
               Keller</q> is the form of address that I prefer.
               </p>
-          </aside>
-          <p><nbsp/>
+          </aside> -->
+          <p>
+            <!-- <nbsp/> -->
             <dl>
               <li>
                 <title>Title</title>
                 <p>
-                  Associate Director of Undergraduate Studies and Teaching Faculty
+                  Assistant Professor of Mathematics
                 </p>
               </li>
               <li>
                 <title>Email</title>
                 <p>
-                  <url href="mailto:mitch.keller@wisc.edu" visual="mitch.keller@wisc.edu">mitch.keller@wisc.edu</url>
+                  <url href="mailto:cara.sulyok@villanova.edu" visual="cara.sulyok@villanova.edu">cara.sulyok@villanova.edu</url>
+                </p>
+              </li>
+              <li>
+                <title>Pronouns</title>
+                <p>
+                  she/her/hers
                 </p>
               </li>
             </dl>
           </p>
         </paragraphs>
-      </subsection>
-      <subsection>
-        <title>Teaching Assistants</title>
-        <paragraphs>
-          <title>LEC 001 (TR 11am<ndash/>12:15pm)</title>
-            <p><nbsp/>
-              <dl>
-                <li>
-                  <title>Sapir Ben-Shahar</title>
-                  <p>
-                    DIS 330 <url href="mailto:sbenshahar@wisc.edu" visual="sbenshahar@wisc.edu">sbenshahar@wisc.edu</url>
-                  </p>
-                </li>
-                <li>
-                  <title>Cheng Chen</title>
-                  <p>
-                    DIS 305 <url href="mailto:cchen593@wisc.edu" visual="cchen593@wisc.edu">cchen593@wisc.edu</url>
-                  </p>
-                </li>                
-                <li>
-                  <title>Yanbo Chen Chen</title>
-                  <p>
-                    DIS 307, 308 <url href="mailto:chen2425@wisc.edu" visual="chen2425@wisc.edu">chen2425@wisc.edu</url>
-                  </p>
-                </li>                    
-                <li>
-                  <title>Alex Menzia</title>
-                  <p>
-                    DIS 303, 304 <url href="mailto:menzia@wisc.edu" visual="menzia@wisc.edu">menzia@wisc.edu</url>
-                  </p>
-                </li>
-                <li>
-                  <title>Jeremy Nohel</title>
-                  <p>
-                    DIS 329 <url href="mailto:nohel@wisc.edu" visual="nohel@wisc.edu">nohel@wisc.edu</url>
-                  </p>
-                </li>                
-                <li>
-                  <title>Zihao Sun</title>
-                  <p>
-                    DIS 306, 309, 310 <url href="mailto:zsun333@wisc.edu" visual="zsun333@wisc.edu">zsun333@wisc.edu</url>
-                  </p>
-                </li>
-              </dl>
-            </p>
-        </paragraphs>
-        <paragraphs>
-          <title>LEC 002 (TR 9:30<ndash/>10:45am)</title>
-            <p><nbsp/>
-              <dl>
-                <li>
-                  <title>Summer Al-Hamdani</title>
-                  <p>
-                    DIS 323, 324 <url href="mailto:alhamdani@wisc.edu" visual="alhamdani@wisc.edu">alhamdani@wisc.edu</url>
-                  </p>
-                </li>
-                <li>
-                  <title>Sapir Ben-Shahar</title>
-                  <p>
-                    DIS 327, 328 <url href="mailto:sbenshahar@wisc.edu" visual="sbenshahar@wisc.edu">sbenshahar@wisc.edu</url>
-                  </p>
-                </li>                
-                <li>
-                  <title>Cheng Chen</title>
-                  <p>
-                    DIS 321, 322 <url href="mailto:cchen593@wisc.edu" visual="cchen593@wisc.edu">cchen593@wisc.edu</url>
-                  </p>
-                </li>
-                <li>
-                  <title>Hoang Nguyen</title>
-                  <p>
-                    DIS 301, 302 <url href="mailto:htnguyen35@wisc.edu" visual="htnguyen35@wisc.edu">htnguyen35@wisc.edu</url>
-                  </p>
-                </li>                
-                <li>
-                  <title>Jiaqi Hou</title>
-                  <p>
-                    DIS 325, 326 <url href="mailto:jhou39@wisc.edu" visual="jhou39@wisc.edu">jhou39@wisc.edu</url>
-                  </p>
-                </li>
-              </dl>
-            </p>
-        </paragraphs>
-
-      </subsection>
+    
       <subsection xml:id="subsec-office-hours">
         <title>Office Hours</title>
         <p>
@@ -262,6 +205,39 @@
         </p>
       </subsection>
     </section>
+
+  <section xml:id="sec-textbook-coverage">
+    <title>Textbook Coverage: Chapters 1-7</title>
+      <p>
+        The following core sections are recommended; optional sections are indicated with the square bracket notation [<m>\cdots</m>], omitted sections with the double square bracket notation [[<m>\cdots</m>]].
+      </p>
+      <p>
+        <ol>
+          <li>
+            <p>
+              First-Order Differential Equations
+            </p>
+            <ol>
+              <li>
+                <p>
+                  Differential Equations and Mathematical Models
+                </p>
+              </li>
+              <li>
+                <p>
+                  Integrals as General and Particular Solutions
+                </p>
+              </li>
+              <li>
+                <p>
+                  Slope Fields
+                </p>
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </p>
+  </section>
   <section xml:id="sec-materials">
     <title>Textbook and Other Required Materials</title>
     <p>
