@@ -230,12 +230,257 @@
               </li>
               <li>
                 <p>
-                  Slope Fields
+                  Slope Fields and Solution Curves
+                </p>
+              </li>
+              <li>
+                <p>
+                  Separable Equations and Applications
+                </p>
+              </li>
+              <li>
+                <p>
+                  Linear First-Order Equations
+                </p>
+              </li>
+              <li>
+                <p>
+                  [[Substitution Methods and Exact Equations]]
+                </p>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <p>
+              Mathematical Models and Numerical Methods
+            </p>
+            <ol>
+              <li>
+                <p>
+                  Population Models
+                </p>
+              </li>
+              <li>
+                <p>
+                  [[Equilibrium Solutions and Stability]]
+                </p>
+              </li>
+              <li>
+                <p>
+                  [Acceleration-Velocity Models]
+                </p>
+              </li>
+              <li>
+                <p>
+                  Numerical Approximation: Euler's Method]
+                </p>
+              </li>
+              <li>
+                <p>
+                  [[A Closer Look at the Euler Method]]
+                </p>
+              </li>
+              <li>
+                <p>
+                  [[The Runge-Kutta Method]]
+                </p>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <p>
+              Linear Systems and Matrices
+            </p>
+            <ol>
+              <li>
+                <p>
+                  Introduction to Linear Systems
+                </p>
+              </li>
+              <li>
+                <p>
+                  Matrices and Gaussian Elimination
+                </p>
+              </li>
+              <li>
+                <p>
+                  Reduced Row-Echelon Matrices
+                </p>
+              </li>
+              <li>
+                <p>
+                  Matrix Operations
+                </p>
+              </li>
+              <li>
+                <p>
+                  Inverses of Matrices
+                </p>
+              </li>
+              <li>
+                <p>
+                  Determinants (emphasis on row operation; Cramer's rule and adjoint formula for inverse can be omitted after mentioning)
+                </p>
+              </li>
+              <li>
+                <p>
+                  [Linear Equations and Curve Fitting]
+                </p>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <p>
+              Vector Spaces
+            </p>
+            <ol>
+              <li>
+                <p>
+                  The Vector Space <m>\R^3</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  The Vector Space <m>\R^m</m> and Subspaces
+                </p>
+              </li>
+              <li>
+                <p>
+                  Linear Combinations and Independence of Vectors
+                </p>
+              </li>
+              <li>
+                <p>
+                  Bases and Dimension for Vector Spaces
+                </p>
+              </li>
+              <li>
+                <p>
+                  [[Row and Column Spaces]]
+                </p>
+              </li>
+              <li>
+                <p>
+                  [[Orthogonal Vectors in <m>\R^n</m>]]
+                </p>
+              </li>
+              <li>
+                <p>
+                  [General Vector Spaces]
+                </p>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <p>
+              Linear Equations of Higher Order
+            </p>
+            <ol>
+              <li>
+                <p>
+                  Introducton: Second-Order Linear Equations
+                </p>
+              </li>
+              <li>
+                <p>
+                  General Solutions of Linear Equations (de-emphasize <m>n \gt 2</m>)
+                </p>
+              </li>
+              <li>
+                <p>
+                  Homogeneous Equations with Constant Coefficients
+                </p>
+              </li>
+              <li>
+                <p>
+                  Mechanical Vibrations
+                </p>
+              </li>
+              <li>
+                <p>
+                  Nonhomogenous Equations and Undetermined Coefficients (de-emphasize most general case) [[omit variation of parameters]]
+                </p>
+              </li>
+              <li>
+                <p>
+                  Forced Oscillations and Resonance (pick carefully from too much material here)
+                </p>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <p>
+              Eigenvalues and Eigenvectors
+            </p>
+            <ol>
+              <li>
+                <p>
+                  Introduction to Eigenvalues
+                </p>
+              </li>
+              <li>
+                <p>
+                  Diagonalization of Matrices
+                </p>
+              </li>
+              <li>
+                <p>
+                  [Applications Involving Powers of Matrices]
+                </p>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <p>
+              Linear Systems of Differential Equations
+            </p>
+            <ol>
+              <li>
+                <p>
+                  First-Order Systems and Applications
+                </p>
+              </li>
+              <li>
+                <p>
+                  Matrices and Linear Systems
+                </p>
+              </li>
+              <li>
+                <p>
+                  The Eigenvalue Method for Linear Systems
+                </p>
+              </li>
+              <li>
+                <p>
+                  A Gallery of Solution Curves of Linear Systems
+                </p>
+              </li>
+              <li>
+                <p>
+                  A Gallery of Solution Curves of Linear Systems
+                </p>
+              </li>
+              <li>
+                <p>
+                  Second-Order Systems and Mechanical Applications
+                </p>
+              </li>
+              <li>
+                <p>
+                  Multiple Eigenvlaue Solutions (non-defective matrices only)
+                </p>
+              </li>
+              <li>
+                <p>
+                  [[Numerical Methods for Systems]]
                 </p>
               </li>
             </ol>
           </li>
         </ol>
+      </p>
+      <p>
+        Exercise problem umbering is the same for editions 2-4 (except Section 7.4 was added, pushing the previous section to 7.5). Edition text differences are not very significant.
       </p>
   </section>
   <section xml:id="sec-materials">
@@ -272,6 +517,28 @@
       </dl>
     </p>
   </section>
+
+  <section>
+    <paragraphs>
+      <title>Maple</title>
+      <p>
+        <url href="https://homepage.villanova.edu/robert.jantzen/maple/whymaple.htm">Elementary use of Maple</url> is a required supporting tool in the entire MAT1500-1505-2500-2705 sequence of Calculus and Differential Equations with Linear Algebra for Science and Engineering majors. For usein this course, see below.
+      </p>
+    </paragraphs>
+    <paragraphs>
+      <title>Textbook</title>
+      <p>
+        Equations and Linear Algebra [first seven chapters]
+      </p>
+      <p>
+        Edwards, Penney, Calvis (Pearson) 4th edition e-text with MyLab Math: <url href="https://www.pearson.com/en-us/subject-catalog/p/differential-equations-and-linear-algebra/P200000006173/9780136743637" visual="https://www.pearson.com/en-us/subject-catalog/p/differential-equations-and-linear-algebra/P200000006173/9780136743637"/>
+      </p>
+      <p>
+        Access to the e-textbook with myLab Math portal for enhanced textbook features, online homework, and interactive student help can be purchased diretly from the publishers ($74.99) or through the Villanova University Shop, with a two-week grade period following registration.
+      </p>
+    </paragraphs>
+  </section>
+
   <section xml:id="sec-assessments">
     <title>Assessments</title>
     <paragraphs>

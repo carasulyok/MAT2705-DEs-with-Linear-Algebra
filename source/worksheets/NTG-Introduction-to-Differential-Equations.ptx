@@ -117,9 +117,9 @@
       The <alert>order</alert> of a differential equation (ODE or PDE) is the 
       <m>\vspace{3cm}</m>
       In symbols, we can write an <m>n</m>th-order ordinary differential equation in one dependent variable <m>x</m> in the general form 
-      <me xml-id="eq-F">
+      <men xml:id="eq-F">
         F(x,y,y',\dots,y^{(n)})=0,
-      </me>
+      </men>
       where <m>F</m> is a real-value function of <m>n+2</m> variables.
     </p>
   </statement>
