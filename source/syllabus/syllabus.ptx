@@ -35,7 +35,7 @@
           </li>
           <li>
             <p>
-              The best way to contact me is via email. My typical response time to any email is within 24 business hours. I generally do not respond to emails after 5 pm and will catch up the following business day. If you do not receive a reply by the end of the second day, please resend your message.
+              The best way to contact me is via email. My typical response time is within 24 business hours. I generally do not respond to emails after 5 pm and will catch up the following business day. If you do not receive a reply by the end of the second day, please resend your message.
               <!-- I will try to respond to any emails within 24 hours, except on weekends when I will respond by the following Monday. -->
             </p>
           </li>
@@ -72,7 +72,7 @@
     <section xml:id="sec-Office-Hours">
       <title>Office Hours</title>
       <p>
-        Mondays 2-3 pm, Wednesdays 2-3 pm, Fridays 9-10 am, and by appointment
+        Mondays 2<ndash/>3 pm, Wednesdays 2<ndash/>3 pm, Fridays 9<ndash/>10 am, and by appointment
       </p>
       <p>
         <em>Office hours will be held in person. If my office door is open, you are always welcome to stop by with a quick question, or you can email me in advance to make an appointment for a different time. Please allow at least 24 hours notice (when possible) for additional office hour requests.</em>
@@ -98,7 +98,7 @@
             <title>Course Description</title>
             <p>
               <!-- This course seeks to familiarize students with the general ideas of ordinary differential equations and linear systems of such equations, while introducing elementary notions of linear algebra which facilitate the understanding of linear differential equations, either alone or in systems. Emphasis is on first- and second-order differential equations, those which most frequently occur in applications. -->
-              The construction of mathematical models to address real-world problems has been one of the most important aspects of each of the branches of science. It is often the case that these mathematical models are formulated in terms of equations involving functions as well as their derivatives. Such equations are called <em>differential equations</em>. This course will demonstrate the usefulness of ordinary differential equations for modeling physical and other phenomena. Complementary mathematical approaches for their solution will be presented, including analytical methods, graphical analysis, and numerical techniques. The basic content of the course includes: first-order equations, mathematical models, matrix algebra, linear equations of second- and higher-order, nonlinear systems and phase plane analysis, and numerical methods.
+              The construction of mathematical models to address real-world problems has been one of the most important aspects of each of the branches of science. It is often the case that these mathematical models are formulated in terms of equations involving functions as well as their derivatives. Such equations are called <em>differential equations</em>. This course will demonstrate the usefulness of ordinary differential equations for modeling physical and other phenomena. Complementary mathematical approaches for their solutions will be presented, including analytical methods, graphical analysis, and numerical techniques. The basic content of this course includes: first-order equations, mathematical models, matrix algebra, linear equations of second- and higher-order, nonlinear systems and phase plane analysis, and numerical methods.
             </p>
           </li>
           <li>
@@ -126,7 +126,7 @@
               Correspondingly, they should understand the interpretation of the solution of a homogeneous linear system <m>A\vec{x}=\vec{0}</m> as finding the most general coefficients of a linear combination of the columns of <m>A</m> which is the zero vector, i.e., a linear relationship among those vectors when nonzero. Each free variable (replaced by a parameter in writing down the solution) in the general solution multiples a vector of coefficients representing an independent such linear relationship among those vectors.
             </p> -->
             <p>
-              We will discuss Chapters 1-7 of the textbook, including some extra topics. After successful completion of the class, you should be able to do the following:
+              We will discuss Chapters 1<ndash/>7 of the textbook, including some extra topics. After successful completion of the class, you should be able to do the following:
               <ol>
                 <li>
                   <p>
@@ -175,7 +175,7 @@
           <li>
             <title>Course Topics</title>
             <p>
-              Broadly speaking, we will discuss the topics of first-order, one dimensional differential equations, linear algebra, systems of first-order differential equations, and higher-order differential equations.
+              Broadly speaking, we will discuss the topics of first-order, one-dimensional differential equations, linear algebra, systems of first-order differential equations, and higher-order differential equations.
             </p>
           </li>
           <li>
@@ -193,7 +193,7 @@
           <li>
             <title>Software</title>
             <p>
-              From the Mathematical Association of America, <q>Advances in technology, together with an increased interest in dynamical systems, are influencing the nature of many first courses in ordinary differential equations (ODEs). In addition, there is an increased emphasis on nonlinear differential equations, and mathematical modeling, as well as on qualitative and numerical approaches that shed light on the behavior of solutions. Analytic techniques are still important, but they no longer tend to be the sole focus.</q> As such, this course will include a software component for solving systems that are either tedious to solve, or cannot be solved, by hand.
+              From the Mathematical Association of America, <q>Advances in technology, together with an increased interest in dynamical systems, are influencing the nature of many first courses in ordinary differential equations. In addition, there is an increased emphasis on nonlinear differential equations, and mathematical modeling, as well as on qualitative and numerical approaches that shed light on the behavior of solutions. Analytic techniques are still important, but they no longer tend to be the sole focus.</q> As such, this course will include a software component for solving systems that are either tedious to solve, or cannot be solved, by hand.
             </p>
             <p>
               We will primarily utilize MATLAB in this course (freely available to Villanova University students at <url href="https://www.mathworks.com/academia/tah-portal/villanova-university-30843248.html" />). No previous knowledge of MATLAB will be assumed for this course. Other software packages may be utilized at the instructor's discretion.
@@ -226,16 +226,16 @@
         </p>
       </section>
       
-      <section xml:id="sec-Assignemnts">
+      <section xml:id="sec-Assignments">
         <title>Assignments</title>
         <dl>
           <li>
             <title>Homework Assignments</title>
             <p>
-              Homework will be assigned weekly on MyLab related to the Foundational Skills listed below. It will serve as an opportunity to practice the concepts and techniques learned in class. The initial due dates will be on Thursdays at 11:59 pm. Certain weeks may have more than one skill to work on. You must make your first attempts by the due date, but you will have unlimited attempts until the end of the semester to demonstrate proficiency in each skill. It takes time to work on new skills and having multiple attempts and the full semester affords you the chance to practice and not be penalized for an initial incorrect answer or mistake. These problems are auto-graded by MyLab as either fully correct or not. There is no partial credit.
+              Homework will be assigned weekly on MyLab related to the Learning Targets listed below. It will serve as an opportunity to practice the concepts and techniques learned in class. The initial due dates will be on Thursdays at 11:59 pm. Certain weeks may have more than one skill to work on. You must make your first attempts by the due date, but you will have unlimited attempts until the end of the semester to demonstrate proficiency in each skill. It takes time to work on new skills and having multiple attempts and the full semester affords you the chance to practice and not be penalized for an initial incorrect answer or mistake. These problems are auto-graded by MyLab as either fully correct or not. There is no partial credit.
             </p>
             <p>
-              You will also have <q>bigger picture</q> Applications/Concepts assignments due on most Wednesdays. Due dates (which are typically at least one week after seeing the necessary material in class) are posted on the Course Calendar. Each Applications/Concepts assignment is designed to tie together multiple concepts from class or relate class material to an application. There will be one or two multi-part questions on each assignment, but waiting until the last minute to start them is not a good idea. Applications/Concepts assignments are due in class on the day marked on the Course Calendar. If you will be absent from class on the day that an Applications/Concepts assignment is due, please email me a <em>single PDF</em> prior to the start of class.
+              You will also have <q>bigger picture</q> Applications/Concepts assignments due on most Wednesdays. Due dates (which are typically at least one week after seeing the necessary material in class) are posted on the Course Calendar. Each Applications/Concepts assignment is designed to tie together multiple concepts from class or relate class material to an application. There will be one or two multi-part questions on each assignment, but waiting until the last minute to start them is not a good idea. Applications/Concepts assignments are due in class on the day marked on the Course Calendar. If you will be absent from class on the day that an Applications/Concepts assignment is due, please email me a <em>single PDF</em> prior to the start of class. Late assignments will not be accepted unless otherwise discussed with the instructor.
             </p>
           </li>
           <li>
@@ -253,13 +253,13 @@
           <li>
             <title>Exams</title>
             <p>
-              The style and grading of exams in this course may be different from anything you have experienced. We will use a method commonly referred to as <q>Grading for Growth</q> or <q>Mastery-Based Testing.</q> There will be three in-class Mastery Concept Days throughout the semester. Instead of using a percentage-based or points-based system on these exams, your grade will be determined by how well you display a mastery of specific mathematical objects called learning targets. The 19 learning targets for this course are listed below. Since there are no points, there is no partial credit. Students only receive credit when they display <q>mastery,</q> but there is a reassessment system in place that allows students to try a concept more than once to demonstrate understanding. You will have your first attempt at a concept on the week you submit the corresponding homework on myLab; Concept Days will be announced with at least one week notice. 
+              The style and grading of exams in this course may be different from anything you have experienced. We will use a method commonly referred to as <q>Grading for Growth</q> or <q>Mastery-Based Testing.</q> There will be three in-class Mastery Concept Days throughout the semester. Instead of using a percentage-based or points-based system on these exams, your grade will be determined by how well you display a mastery of specific mathematical objects called Concepts/Learning Targets. The 19 Learning Targets for this course are listed below. Since there are no points, there is no partial credit. Students only receive credit when they display <q>mastery,</q> but there is a reassessment system in place that allows students to try a concept more than once to demonstrate understanding. You will have your first attempt at a concept on the week you submit the corresponding homework on MyLab; Concept Days will be announced with at least one week notice. 
             </p>
           </li>
           <li>
             <title>Final Exam</title>
             <p>
-              The final exam is scheduled by the University and is noted on our Course Calendar. The final exam time will serve as the last retesting opportunity and will include all 19 learning targets that have not yet been mastered. If a student has already mastered all of the concepts, they will not need to take the final exam.
+              The final exam is scheduled by the University and is noted on our Course Calendar. The final exam time will serve as the last retesting opportunity and will include the remainder of the 19 Learning Targets that have not yet been mastered. If a student has already mastered all of the concepts, they will not need to take the final exam.
             </p>
           </li>
         </dl>
@@ -307,20 +307,20 @@
       <section xml:id="sec-Calculating-Exam-Averages">
         <title>Calculating Exam Averages</title>
         <p>
-          Each student's exam average begins at 0 and is increased each time they master a learning target. Thus, you are progressively earning your grade over the course of the semester. The mastery of a single learning target will add 5.263% to the exam average so that a student who has mastered all 19 learning targets receives a 100% test average. If you receive a <q>P</q> on a learning target, you are advised to retest that concept. A grade of <q>P</q> will only add 2.5% to your test average per learning target, so no student will obtain a passing exam score with zero mastered concepts. 
+          Each student's exam average begins at 0 and is increased each time they master a learning target. Thus, you are progressively earning your grade over the course of the semester. The mastery of a single learning target will add 5.263% to the exam average so that a student who has mastered all 19 learning targets receives a 100% test average. If you receive a <q>P</q> on a learning target, you are advised to retest that concept. A grade of <q>P</q> will only add 2.5% to your test average per learning target, so no student will obtain a passing exam score with zero mastered concepts.  No credit is awarded for an <q>X.</q>
         </p>
         <p>
-          The primary source of extra attempts comes from the fact that once a concept has been tested, it will continue to appear on every subsequent Concept Day. Therefore, Concept Days get longer as the semester goes on and more learning targets are covered. <em>There is not time to complete all 19 learning targets on a single day.</em> Students are encouraged not to attempt all learning targets on every Concept Day, but to use their time wisely to attempt concepts they are most prepared for. There is no penalty for not attempting a learning target since it can be restested later. Also, once you have mastered a learning target, you can skip that problem. Each learning target is graded separately. 
+          The primary source of extra attempts comes from the fact that once a concept has been tested, it will continue to appear on every subsequent Concept Day. Therefore, Concept Days get longer as the semester goes on and more learning targets are covered. <em>There is not time to complete all 19 learning targets on a single day.</em> Students are encouraged not to attempt all learning targets on every Concept Day, but to use their time wisely to attempt concepts they are most prepared for. There is no penalty for not attempting a learning target since it can be retested later. Also, once you have mastered a learning target, you can skip that problem. Each learning target is graded separately. 
         </p>
         <p>
-          <alert>Fair Warning:</alert> This may be more complicated than the typical grading style you have become accustomed to over the years. That's okay! If at any point in the semester you need clarification on how the system works or your standing in the course, I encourage you to come talk to or email me. The goal with this system is to provide you with <em>more control</em> over your grade with <em>less stress</em> and to reflect <em>your effort and improvement</em> (and negate the previously large impact of a single bad test day). It does not matter to me <em>when</em> in the semester you master a certain concept, just that you master it! Do not be discouraged if you do not master a learning target on the first attempt (or even the first few attempts). That's normal! <em>Failure, though often viewed negatively, is an integral part of the learning process. The way to truly learn a subject is to make mistakes, learn from them, and do better next time.</em>
+          <alert>Fair Warning:</alert> This may be more complicated than the typical grading style you have become accustomed to over the years. That's okay! If at any point in the semester you need clarification on how the system works or your standing in the course, I encourage you to talk to or email me. The goal with this system is to provide you with <em>more control</em> over your grade with <em>less stress</em> and to reflect <alert>your effort and improvement</alert> (and negate the previously large impact of a single bad test day). It does not matter to me <em>when</em> in the semester you master a certain concept, just that you master it! Do not be discouraged if you do not master a learning target on the first attempt (or even the first few attempts). That's normal! <alert>Failure, though often viewed negatively, is an integral part of the learning process. The way to truly learn a subject is to make mistakes, learn from them, and do better next time.</alert>
         </p>
       </section>
 
       <section xml:id="sec-Concepts">
         <title>Concepts</title>
         <p>
-          There are 19 Foundational Skills, related to ordinary differential equations (ODEs) and Linear Algebra (LA). The following list of concepts is subject to change order depending on scheduling. The instructor will make every effort to stick to this list, but reserves the right to make changes as needed. Students will be notified of any major changes in class and/or via Blackboard announcement.
+          There are 19 Learning Targets/Concepts, related to ordinary differential equations (ODEs) and Linear Algebra (LA). The following list of concepts is subject to change order depending on scheduling. The instructor will make every effort to stick to this list, but reserves the right to make changes as needed. Students will be notified of any major changes in class and/or via Blackboard announcement.
         </p>
         <p>
           <ol>
@@ -336,7 +336,7 @@
             </li>
             <li>
               <p>
-                ODE.3: Solve a first-order, linear, nonhomogenous ODE.
+                ODE.3: Solve a first-order, linear, nonhomogeneous ODE.
               </p>
             </li>
             <li>
@@ -371,12 +371,12 @@
             </li>
             <li>
               <p>
-                ODE.10: Solve <m>n</m>-th order, one-dimensional, linear, homogeneous, constant coefficient ODEs.
+                ODE.10: Solve <m>n</m>-th order, one-dimensional, linear, homogeneous ODEs with constant coefficients.
               </p>
             </li>
             <li>
               <p>
-                ODE.11: Solve <m>n</m>-th order, one-dimensional, linear, nonhomogeneous, constant coefficient ODEs.
+                ODE.11: Solve <m>n</m>-th order, one-dimensional, linear, nonhomogeneous ODEs with constant coefficients.
               </p>
             </li>
             <li>
@@ -430,7 +430,7 @@
         </p>
         <tabular>
           <row header="yes" bottom="minor">
-            <cell>Component</cell>
+            <cell>Category</cell>
             <cell>Weight</cell>
           </row>
           <row>
@@ -500,10 +500,10 @@
       <section xml:id="sec-Personal-Days">
         <title>Personal Days</title>
         <p>
-          In addition to the attendance policy stated above, students are entitled to two excused absences for any reason that may contribute to their personal wellness. Students must advise the instructor by email before class of their intent to utilize a Personal Day as the reason for their absence.  A Personal Day will not be approved retroactively. Students may, but are not required, to provide additional information regarding their absence. Additionally, Personal Days may not:
+          In addition to the attendance policy stated above, students are entitled to two excused absences for any reason that may contribute to their personal wellness. Students must advise the instructor by email before class of their intent to utilize a Personal Day as the reason for their absence.  A Personal Day will not be approved retroactively. Students may, but are not required to, provide additional information regarding their absence. Additionally, Personal Days may not:
         </p>
         <p>
-          <dl>
+          <ul>
             <li>
               <p>
                 be on consecutive class days;
@@ -521,10 +521,10 @@
             </li>
             <li>
               <p>
-                be used on days when exams, presentations or other major assignments are scheduled.
+                be used on days when exams, presentations, or other major assignments are scheduled (which includes any day with a concept attempt).
               </p>
             </li>
-          </dl>
+          </ul>
         </p>
         <p>
           A Personal Day does not grant an automatic extension for items due. Students remain responsible for all assignments, exams, presentations, etc. due on that date. It is in the instructor's discretion to determine whether any extension is appropriate given individual circumstances.
@@ -571,7 +571,7 @@
           If a student is found responsible for an academic integrity violation, which results in a grade penalty, they may not WX the course unless they are approved to WX for significant medical reasons.  Students applying for a WX based on significant medical reasons, must submit documentation and their request for an exception will be considered.
         </p>
         <p>
-          I allow <em>and encourage</em> students to work together and discuss assignments. However, there are differences between working together (collaborating) and what may constitute a violation of academic integrity. <em>Working together/collaborating</em> means you and your peer(s) talk about a problem, work together to figure it out, but then write up and submit your answers independently. To be sure to avoid what may look like copying and possibly violating the academic integrity policy, take a short break between working in a group and writing up your answers.
+          I allow <em>and encourage</em> students to work together and discuss assignments. However, there are differences between working together (collaborating) and what may constitute a violation of academic integrity. <em>Working together/collaborating</em> means you and your peer(s) talk about a problem, work together to figure it out, but then write up and submit your answers independently. To be sure to avoid what may look like copying and possibly violating the Academic Integrity Policy, take a short break between working in a group and writing up your answers.
         </p>
       </section>
 
@@ -603,7 +603,7 @@
             </li>
             <li>
               <p>
-                My scheduled <term>office hours</term> are available to you for help with assignments, questions about the class, or even just to chat. I know you have other classes, so if you cannot make my regularly scheduled office hours, I encourage you to email me so we can determine another time to meet. I will respond to any emails within 24 hours during the week. Emails received over the weekend I will respond by the following Monday morning.
+                My scheduled <term>office hours</term> are available to you for help with assignments, questions about the class, or even just to chat. I know you have other classes, so if you cannot make my regularly scheduled office hours, I encourage you to email me so we can determine another time to meet. I can often help with class-related questions via email as well. I will respond to any emails within 24 hours during the week. I will respond to emails received over the weekend by the following Monday morning.
               </p>
             </li>
             <li>
