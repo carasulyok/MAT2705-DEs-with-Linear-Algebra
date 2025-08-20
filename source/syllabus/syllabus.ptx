@@ -12,13 +12,13 @@
     <xi:include href="./frontmatter.ptx" />
 
     <section xml:id="sec-instructor-info">
-      <title>Instructor Information</title>
+      <title>Professor Information</title>
       <p>
         <dl>
           <li>
-            <title>Instructor</title>
+            <title>Professor</title>
             <p>
-              Dr. Cara Sulyok
+              Dr. Cara Sulyok (she/her/hers)
             </p>
           </li>
           <li>
@@ -27,9 +27,67 @@
               <url href="mailto:cara.sulyok@villanova.edu" visual="cara.sulyok@villanova.edu">cara.sulyok@villanova.edu</url>
             </p>
           </li>
+          <li>
+            <title>Office</title>
+            <p>
+              SAC 368
+            </p>
+          </li>
+          <li>
+            <p>
+              The best way to contact me is via email. My typical response time to any email is within 24 business hours. I generally do not respond to emails after 5 pm and will catch up the following business day. If you do not receive a reply by the end of the second day, please resend your message.
+              <!-- I will try to respond to any emails within 24 hours, except on weekends when I will respond by the following Monday. -->
+            </p>
+          </li>
         </dl>
       </p>
     </section>
+
+    <section xml:id="sec-Sections">
+      <title>Sections</title>
+      <p>
+        <dl>
+          <li>
+            <title>Section 001</title>
+            <p>
+              MWF 10:40<ndash/>11:30 am in Mendel Hall 256
+            </p>
+            <p>
+              T 10<ndash/>10:50 am in John Barry Hall 202A
+            </p>
+          </li>
+          <li>
+            <title>Section 005</title>
+            <p>
+              MWF 12:50<ndash/>1:40 pm in Chemical Engineering Building 202
+            </p>
+            <p>
+              T 12<ndash/>12:50 pm in John Barry Hall 213
+            </p>
+          </li>
+        </dl>
+      </p>
+    </section>
+
+    <section xml:id="sec-Office-Hours">
+      <title>Office Hours</title>
+      <p>
+        Mondays 2-3 pm, Wednesdays 2-3 pm, Fridays 9-10 am, and by appointment
+      </p>
+      <p>
+        <em>Office hours will be held in person. If my office door is open, you are always welcome to stop by with a quick question, or you can email me in advance to make an appointment for a different time. Please allow at least 24 hours notice (when possible) for additional office hour requests.</em>
+      </p>
+    </section>
+
+    <!-- <section xml:id="sec-Textbook">
+      <title>Textbook</title>
+      <p>
+        <em>Differential Equations and Linear Algebra</em>, Fourth Edition by Edwards, Penney, and Calvis
+      </p>
+      <p>
+        There is a link on Blackboard to buy the eTextbook and access the online homework system.
+      </p>
+    </section> -->
 
     <!-- Include chapters -->
     <section xml:id="sec-course-info">
@@ -37,15 +95,16 @@
       <p>
         <dl>
           <li>
-            <title>Goals</title>
+            <title>Course Description</title>
             <p>
-              This course seeks to familiarize students with the general ideas of ordinary differential equations and linear systems of such equations, while introducing elementary notions of linear algebra which facilitate the understanding of linear differential equations, either alone or in systems. Emphasis is on first- and second-order differential equations, those which most frequently occur in applications.
+              <!-- This course seeks to familiarize students with the general ideas of ordinary differential equations and linear systems of such equations, while introducing elementary notions of linear algebra which facilitate the understanding of linear differential equations, either alone or in systems. Emphasis is on first- and second-order differential equations, those which most frequently occur in applications. -->
+              The construction of mathematical models to address real-world problems has been one of the most important aspects of each of the branches of science. It is often the case that these mathematical models are formulated in terms of equations involving functions as well as their derivatives. Such equations are called <em>differential equations</em>. This course will demonstrate the usefulness of ordinary differential equations for modeling physical and other phenomena. Complementary mathematical approaches for their solution will be presented, including analytical methods, graphical analysis, and numerical techniques. The basic content of the course includes: first-order equations, mathematical models, matrix algebra, linear equations of second- and higher-order, nonlinear systems and phase plane analysis, and numerical methods.
             </p>
           </li>
           <li>
-            <title>Objectives</title>
-            <p>
-               First-order differenital equations provide a view of the geometric setting of differential equations through the directionfield, and a taste of solution techniques through the two most commonly occurs first-order differential equation types: separabel and linear. Students hsould be able to interpret a directionfield plot, and know whether a first-order differential equation is separable or linear (in either variable) or neither, and should be able to apply their respective solution algorithms when they are appropriate and the algebraic/calculus operations involved are reasonable, and understand the difference between explicit and implicit solutions.
+            <title>Course Objectives</title>
+            <!-- <p>
+               First-order differential equations provide a view of the geometric setting of differential equations through the directionfield, and a taste of solution techniques through the two most commonly occurs first-order differential equation types: separabel and linear. Students hsould be able to interpret a directionfield plot, and know whether a first-order differential equation is separable or linear (in either variable) or neither, and should be able to apply their respective solution algorithms when they are appropriate and the algebraic/calculus operations involved are reasonable, and understand the difference between explicit and implicit solutions.
             </p>
             <p>
               Students should be able to solve homogeneous second-order constant coefficient differential equations and understand the different kinds of solutions which are possible, including complex characteristic values. (If the current text handles differential equations of any order in this context, emphasis should be on the less exotic possibilities, as in the method of undetermined coefficients, for example.) They should be able to use the method of undeterminedd coefficients for reasonable driving functions in the nonhomogeneous case and understand the difference between the undetermined coefficients of the technique and the arbitrary constants which appear in the solution. Since the harmonically driven damped harmonic oscillator system is the single most important application of this and connects somewhat to their intuition and prior knowledge from high school physics, it is reasonable that it be used as an example for them. The opportunity to discuss resonance also sets the stage for real applications of eigenvalue analysis (modal analysis) in the linear system case, while the interpretation of the steady state and transient parts of the solution give a physical setting to the mathematical distinction between the homogeneous and nonhomogeneous terms.
@@ -65,9 +124,46 @@
                 x^1Col(A,1)+\cdots+x^nCol(A,n)=b
               </me>.
               Correspondingly, they should understand the interpretation of the solution of a homogeneous linear system <m>A\vec{x}=\vec{0}</m> as finding the most general coefficients of a linear combination of the columns of <m>A</m> which is the zero vector, i.e., a linear relationship among those vectors when nonzero. Each free variable (replaced by a parameter in writing down the solution) in the general solution multiples a vector of coefficients representing an independent such linear relationship among those vectors.
+            </p> -->
+            <p>
+              We will discuss Chapters 1-7 of the textbook, including some extra topics. After successful completion of the class, you should be able to do the following:
+              <ol>
+                <li>
+                  <p>
+                    <!-- Solve and analyze ordinary differential equations both analytically and numerically. -->
+                     <em>Understand</em> the concepts relating to the order and linearity of differential equations, analytic and computational techniques for solving differential equations, and application of differential equations.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <em>Understand</em> some fundamentals of linear algebra.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <!-- Develop an understanding of how differential equations can be used as mathematical models of real-world phenomena. -->
+                     <em>Apply</em> your understanding of the concepts, formulas, and problem-solving procedures to thoroughly investigate relevant mathematical models of real-world phenomena.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <em>Explain</em> the concepts of linear systems, differential equation solution methods, and related ideas at a fundamental level, as well as how and why we use the solution techniques that we use.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <em>Use</em> technology and mathematical software, including Maple and MATLAB, to study mathematics.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <em>Communicate</em> mathematics effectively in both writing and orally.
+                  </p>
+                </li>
+              </ol>
             </p>
           </li>
-          <li>
+          <!-- <li>
             <title>Maple Use</title>
             <p>
               All students should learn quickly how to input any combination of differential equations and initial conditions in standard prime derivative notation and how to solve them using the context-sensitive menu choice <q>Solve DE</q>. The course shoudl test the solution algorithms and how to interpret what the solutions mean and what structure they have. Knowing the solution is a good check.
@@ -75,112 +171,469 @@
             <p>
               Similarly, any matrix is easy to input from the Matrix palette and the context-sensitive menu enables the student to find its row reduced form, calculate its determinant and inverse if appropriate (simply a <q><m>-1</m></q> superscript on the matrix!), and eigenvectors and eigenvalues. The LinearSolveTutor with the Gauss-Jordan reduction choice from teh Student[LinearAlgebra] package (available directly from the Tutors menu) should be highlighted in learning the matrix reduction process and in solving linear systems. Matrix multiplication to confirm diagonalization of a square matrix using the matrix of eigenvalues and its inverse is trivial in standard math notation in the Maple input region.
             </p>
+          </li> -->
+          <li>
+            <title>Course Topics</title>
+            <p>
+              Broadly speaking, we will discuss the topics of first-order, one dimensional differential equations, linear algebra, systems of first-order differential equations, and higher-order differential equations.
+            </p>
+          </li>
+          <li>
+            <title>Course Calendar</title>
+            <p>
+              The <url href="https://docs.google.com/document/d/1F2ISW02AAZpNKaPdSVAj0pPYz0TqI_Gl4_3gNFpDMnU/edit?usp=sharing">Course Calendar</url> specifies topics discussed on a given class day as well as due dates for assignments. The Course Calendar is a part of the syllabus. It may change, with advance notice provided to students.
+            </p>
+          </li>
+          <li>
+            <title>Required Materials</title>
+            <p>
+              <em>Differential Equations and Linear Algebra</em>, Fourth Edition by Edwards, Penney, and Calvis is <em>required</em> for this course. There is a link on Blackboard to buy the eTextbook and access the online homework system. Additionally, I <em>highly</em> recommend that you purchase a binder for all of your note-taking guides and other course materials.
+            </p>
+          </li>
+          <li>
+            <title>Software</title>
+            <p>
+              From the Mathematical Association of America, <q>Advances in technology, together with an increased interest in dynamical systems, are influencing the nature of many first courses in ordinary differential equations (ODEs). In addition, there is an increased emphasis on nonlinear differential equations, and mathematical modeling, as well as on qualitative and numerical approaches that shed light on the behavior of solutions. Analytic techniques are still important, but they no longer tend to be the sole focus.</q> As such, this course will include a software component for solving systems that are either tedious to solve, or cannot be solved, by hand.
+            </p>
+            <p>
+              We will primarily utilize MATLAB in this course (freely available to Villanova University students at <url href="https://www.mathworks.com/academia/tah-portal/villanova-university-30843248.html" />). No previous knowledge of MATLAB will be assumed for this course. Other software packages may be utilized at the instructor's discretion.
+            </p>
+          </li>
+          <li>
+            <title>Blackboard</title>
+            <p>
+              Check Blackboard regularly (at least three times per week) during the semester for important information, announcements, and resources. Additionally, check your Villanova email every day. I will use email as my primary method of communication outside of class.
+            </p>
           </li>
         </dl>
       </p>
-      <!--  <p>
-       <dl>
+      </section>
+
+      <section xml:id="sec-Classroom-Expectations-Etiquette">
+        <title>Classroom Expectations/Etiquette</title>
+        <p>
+          Students are expected to assist in maintaining a classroom environment conducive to learning. Disruptive behavior in the classroom may be classified as anything that disturbs the instructor or other students during the class period. Please be considerate of your instructor and classmates by refraining from cell phone use during class. It is incredibly distracting not only to yourself, but also to classmates and the instructor. Please do not have phones out unless it is for a class activity, such as an online quiz or poll.
+        </p>
+        <p>
+          I will provide note-taking guides to fill out during class, and I <em>highly</em> recommend that you take notes with me as I write since it has been shown that we retain and comprehend information much more deeply when we write it as opposed to just seeing it. It will also help you pay attention and keep you engaged. If I give students an opportunity to try a problem on their own during class, I recommend trying it! This is time for you to check your understanding, not for me. You will not know what you do not understand until you try it on your own; solely watching me do it is a completely different level of comprehension. The more you participate and ask questions, the more you will get from the class. 
+        </p>
+      </section>
+
+      <section xml:id="sec-Inclusivity-Statement">
+        <title>Inclusivity Statement</title>
+        <p>
+          Villanova University supports an inclusive learning environment where diversity and individual differences are respected, appreciated, and recognized as a source of strength and intellectual inquiry. Our different backgrounds, experiences, and perspectives enrich our learning together; they are welcome and valued in this course. We will demonstrate respect and diligence in understanding how other peoples' perspectives, behaviors, and worldviews may be different from our own and how they inform our own understanding. 
+        </p>
+      </section>
+      
+      <section xml:id="sec-Assignemnts">
+        <title>Assignments</title>
+        <dl>
           <li>
-            <title>Course Description</title>
+            <title>Homework Assignments</title>
             <p>
-              Basic concepts of logic, sets, partial order and other relations, and functions. Basic concepts of mathematics (definitions, proofs, sets, functions, and relations) with a focus on discrete structures: integers, bits, strings, trees, and graphs. Propositional logic, Boolean algebra, and predicate logic. Mathematical induction and recursion. Invariants and algorithmic correctness. Recurrences and asymptotic growth analysis. Fundamentals of counting.
+              Homework will be assigned weekly on MyLab related to the Foundational Skills listed below. It will serve as an opportunity to practice the concepts and techniques learned in class. The initial due dates will be on Thursdays at 11:59 pm. Certain weeks may have more than one skill to work on. You must make your first attempts by the due date, but you will have unlimited attempts until the end of the semester to demonstrate proficiency in each skill. It takes time to work on new skills and having multiple attempts and the full semester affords you the chance to practice and not be penalized for an initial incorrect answer or mistake. These problems are auto-graded by MyLab as either fully correct or not. There is no partial credit.
+            </p>
+            <p>
+              You will also have <q>bigger picture</q> Applications/Concepts assignments due on most Wednesdays. Due dates (which are typically at least one week after seeing the necessary material in class) are posted on the Course Calendar. Each Applications/Concepts assignment is designed to tie together multiple concepts from class or relate class material to an application. There will be one or two multi-part questions on each assignment, but waiting until the last minute to start them is not a good idea. Applications/Concepts assignments are due in class on the day marked on the Course Calendar. If you will be absent from class on the day that an Applications/Concepts assignment is due, please email me a <em>single PDF</em> prior to the start of class.
             </p>
           </li>
           <li>
-            <title>Credits</title>
+            <title>Worksheets and Labs</title>
             <p>
-              3
+              The more actively involved you are during class time, the better you will learn the material. (In fact, research has shown that classes that are entirely lecture-based have significantly higher failure rates.) To encourage your learning, the class time will be a mixture of lecture and other activities. Participation will be expected, and it is part of your grade. As one of the active learning techniques used in this class, there will be worksheets, labs, and other participation assignments given throughout the semester. The worksheets are intended to give opportunities for group discussions about the material. Labs will give students the opportunity to practice using software. If you miss class on the day of a worksheet or in-class assignment, it is your responsibility to find a copy of it on Blackboard to complete and turn in. Late assignments will not be accepted unless otherwise discussed with the instructor.
             </p>
           </li>
           <li>
-            <title>Course Designations and Attributes</title>
+            <title>Projects</title>
             <p>
-              <dl>
-                <li>
-                  <title>Breadth</title>
-                  <p>
-                    Natural Science
-                  </p>
-                </li>
-                <li>
-                  <title>Level</title>
-                  <p>
-                    Intermediate
-                  </p>
-                </li>
-                <li>
-                  <title>L&amp;S Credit</title>
-                  <p>
-                    Counts as Liberal Arts and Science credit in L&amp;S
-                  </p>
-                </li>
-              </dl>
+              There will be at least one project assigned during the course. The project will involve an application problem of one's interest (using software tools) and providing a written report of the mathematical results obtained that also details what those results mean in terms of the system being studied. More information will be provided once the project is assigned. Late projects will not be accepted unless otherwise discussed with the instructor.
             </p>
           </li>
           <li>
-            <title>Requisite</title>
+            <title>Exams</title>
             <p>
-              MATH 217 or 221
+              The style and grading of exams in this course may be different from anything you have experienced. We will use a method commonly referred to as <q>Grading for Growth</q> or <q>Mastery-Based Testing.</q> There will be three in-class Mastery Concept Days throughout the semester. Instead of using a percentage-based or points-based system on these exams, your grade will be determined by how well you display a mastery of specific mathematical objects called learning targets. The 19 learning targets for this course are listed below. Since there are no points, there is no partial credit. Students only receive credit when they display <q>mastery,</q> but there is a reassessment system in place that allows students to try a concept more than once to demonstrate understanding. You will have your first attempt at a concept on the week you submit the corresponding homework on myLab; Concept Days will be announced with at least one week notice. 
             </p>
           </li>
           <li>
-            <title>Instructional modality</title>
+            <title>Final Exam</title>
             <p>
-              In-person
+              The final exam is scheduled by the University and is noted on our Course Calendar. The final exam time will serve as the last retesting opportunity and will include all 19 learning targets that have not yet been mastered. If a student has already mastered all of the concepts, they will not need to take the final exam.
             </p>
-          </li>  
+          </li>
         </dl>
-      </p>
-      <paragraphs>
-        <title>Learning Outcomes</title>
+      </section>
+
+      <section xml:id="sec-Extensions">
+        <title>Extensions</title>
+        <p>
+          Extensions will be granted when reasonable and feasible if requested by email (<url href="mailto:cara.sulyok@villanova.edu" visual="cara.sulyok@villanova.edu">cara.sulyok@villanova.edu</url>) before the due date. It is not necessary to give a reason. When you ask for an extension, be sure to give a date for when you can submit the assignment. This new date that you propose will become your new due date, and I will not extend it. Remember, everything must be completed by the end of the semester; so keeping up now will prevent a rush at the end of the term.
+        </p>
+      </section>
+
+      <section xml:id="sec-Grading-of-Mastery-Based-Exams">
+        <title>Grading of Mastery-Based Exams</title>
+        <p>
+          Each Concept Day will include several learning targets. You will earn a mark for each target that indicates how well you demonstrated understanding of that target. There are three possible marks: 
+        </p>
+        <p>
+          <dl>
+            <li>
+              <title>M - Mastered</title>
+              <p>
+                Demonstrates understanding of the relevant target and no additional study or review is needed.
+              </p>
+            </li>
+            <li>
+              <title>P - Progressing</title>
+              <p>
+                Demonstrates partial understanding, but with fundamental error/misunderstanding or is incomplete. Needs review and revision.
+              </p>
+            </li>
+            <li>
+              <title>X - Not assessable</title>
+              <p>
+                Not enough work to determine mastery: an insubstantial attempt, too many errors to correct each individually, or uses an inaccurate method or tool.
+              </p>
+            </li>
+          </dl>
+        </p>
+        <p>
+          <term>Once you have received an <q>M</q> on a learning target, you no longer have to attempt that learning target. </term>
+        </p>
+      </section>
+
+      <section xml:id="sec-Calculating-Exam-Averages">
+        <title>Calculating Exam Averages</title>
+        <p>
+          Each student's exam average begins at 0 and is increased each time they master a learning target. Thus, you are progressively earning your grade over the course of the semester. The mastery of a single learning target will add 5.263% to the exam average so that a student who has mastered all 19 learning targets receives a 100% test average. If you receive a <q>P</q> on a learning target, you are advised to retest that concept. A grade of <q>P</q> will only add 2.5% to your test average per learning target, so no student will obtain a passing exam score with zero mastered concepts. 
+        </p>
+        <p>
+          The primary source of extra attempts comes from the fact that once a concept has been tested, it will continue to appear on every subsequent Concept Day. Therefore, Concept Days get longer as the semester goes on and more learning targets are covered. <em>There is not time to complete all 19 learning targets on a single day.</em> Students are encouraged not to attempt all learning targets on every Concept Day, but to use their time wisely to attempt concepts they are most prepared for. There is no penalty for not attempting a learning target since it can be restested later. Also, once you have mastered a learning target, you can skip that problem. Each learning target is graded separately. 
+        </p>
+        <p>
+          <alert>Fair Warning:</alert> This may be more complicated than the typical grading style you have become accustomed to over the years. That's okay! If at any point in the semester you need clarification on how the system works or your standing in the course, I encourage you to come talk to or email me. The goal with this system is to provide you with <em>more control</em> over your grade with <em>less stress</em> and to reflect <em>your effort and improvement</em> (and negate the previously large impact of a single bad test day). It does not matter to me <em>when</em> in the semester you master a certain concept, just that you master it! Do not be discouraged if you do not master a learning target on the first attempt (or even the first few attempts). That's normal! <em>Failure, though often viewed negatively, is an integral part of the learning process. The way to truly learn a subject is to make mistakes, learn from them, and do better next time.</em>
+        </p>
+      </section>
+
+      <section xml:id="sec-Concepts">
+        <title>Concepts</title>
+        <p>
+          There are 19 Foundational Skills, related to ordinary differential equations (ODEs) and Linear Algebra (LA). The following list of concepts is subject to change order depending on scheduling. The instructor will make every effort to stick to this list, but reserves the right to make changes as needed. Students will be notified of any major changes in class and/or via Blackboard announcement.
+        </p>
         <p>
           <ol>
             <li>
               <p>
-                Be able to construct proofs by induction to prove properties in a variety of domains (mathematical formulas, recursively-defined structures, loop invariants, correctness of recursive programs).
+                ODE.1: Solve an ODE by direct integration.
               </p>
             </li>
             <li>
               <p>
-                Apply basic combinatoric techniques to counting problems.
+                ODE.2: Solve a first-order, separable ODE.
               </p>
             </li>
             <li>
               <p>
-                Develop basic skills to construct mathematically rigorous arguments and proofs.
+                ODE.3: Solve a first-order, linear, nonhomogenous ODE.
               </p>
             </li>
             <li>
               <p>
-                Gain exposure to the basics of program analysis (program correctness, recurrences, asymptotic analysis).
+                ODE.4: Apply existence and uniqueness theorems to first-order, one-dimensional ODEs.
               </p>
             </li>
             <li>
               <p>
-                Demonstrate a familiarity with and an ability to reason about discrete structures/data types (integers, strings, bit strings, sets, relations, functions, graphs, trees).
+                ODE.5: Find and classify the stability of equilibrium points for first-order, one-dimensional ODEs.
+              </p>
+            </li>
+            <li>
+              <p>
+                ODE.6: Approximate solutions to a first-order ODE using Euler's Method, Modified Euler's Method, and/or Runge-Kutta of order four.
+              </p>
+            </li>
+            <li>
+              <p>
+                ODE.7: Convert higher-order ODEs into a first-order system.
+              </p>
+            </li>
+            <li>
+              <p>
+                ODE.8: Use given solutions to find general and particular solutions to linear systems of ODEs.
+              </p>
+            </li>
+            <li>
+              <p>
+                ODE.9: Solve first-order, linear, homogeneous systems of ODEs.
+              </p>
+            </li>
+            <li>
+              <p>
+                ODE.10: Solve <m>n</m>-th order, one-dimensional, linear, homogeneous, constant coefficient ODEs.
+              </p>
+            </li>
+            <li>
+              <p>
+                ODE.11: Solve <m>n</m>-th order, one-dimensional, linear, nonhomogeneous, constant coefficient ODEs.
+              </p>
+            </li>
+            <li>
+              <p>
+                ODE.12: Find and classify equilibrium points of first-order ODE systems.
+              </p>
+            </li>
+            <li>
+              <p>
+                LA.1: Add, subtract, and multiply matrices.
+              </p>
+            </li>
+            <li>
+              <p>
+                LA.2: Solve matrix equations using row reductions.
+              </p>
+            </li>
+            <li>
+              <p>
+                LA.3: Determine if a set of vectors is linearly independent or dependent.
+              </p>
+            </li>
+            <li>
+              <p>
+                LA.4: Determine if a matrix is invertible or not, and if so, compute the inverse.
+              </p>
+            </li>
+            <li>
+              <p>
+                LA.5: Determine if a set of vectors forms a basis for a vector space.
+              </p>
+            </li>
+            <li>
+              <p>
+                LA.6: Compute the determinant of a matrix.
+              </p>
+            </li>
+            <li>
+              <p>
+                LA.7: Find the eigenvalues and eigenvectors of a matrix.
               </p>
             </li>
           </ol>
         </p>
-      </paragraphs>
-      <paragraphs>
-        <title>Meeting Times and Locations</title>
+      </section>
+
+      <section xml:id="sec-Grade-Determination">
+        <title>Grade Determination</title>
         <p>
-          Both sections have lecture meetings in Van Vleck Hall B102. LEC 001 meets TR 11am<ndash/>12:15pm and LEC 002 meets TR 9:30<ndash/>10:45am. Each student is enrolled in one 50-minute discussion section led by one of the teaching assistants. Your discussion section meets either on Monday or Wednesday. Check your Student Center for your discussion number, time, and location.
+          I will use the Blackboard gradebook and expect you to check your scores to ensure there are no errors. A course average will be determined using the categories and weights listed below. Final letter grades will be determined using the grading scale below. The letter grade is a measure of a student’s mastery of the course material and fulfillment of course objectives.
         </p>
-      </paragraphs>
-      <paragraphs>
-        <title>How the Credit Hours are Met by the Course</title>
+        <tabular>
+          <row header="yes" bottom="minor">
+            <cell>Component</cell>
+            <cell>Weight</cell>
+          </row>
+          <row>
+            <cell>Homework</cell>
+            <cell>10%</cell>
+          </row>
+          <row>
+            <cell>Worksheets and Labs</cell>
+            <cell>10%</cell>
+          </row>
+          <row>
+            <cell>Projects</cell>
+            <cell>10%</cell>
+          </row>
+          <row>
+            <cell>Exam/Concepts</cell>
+            <cell>70%</cell>
+          </row>
+        </tabular>
+        
+        <tabular>
+          <row>
+            <cell> </cell>
+            <cell><m>93\leq</m> A <m>\leq 100</m></cell>
+            <cell><m>90\leq</m> A- <m>\lt 93</m></cell>
+          </row>
+          <row>
+            <cell><m>87\leq</m> B+ <m>\lt 90</m></cell>
+            <cell><m>83\leq</m> B <m>\lt 87</m></cell>
+            <cell><m>80\leq</m> B- <m>\lt 83</m></cell>
+          </row>
+          <row>
+            <cell><m>77\leq</m> C+ <m>\lt 80</m></cell>
+            <cell><m>73\leq</m> C <m>\lt 77</m></cell>
+            <cell><m>70\leq</m> C- <m>\lt 73</m></cell>
+          </row>
+          <row>
+            <cell><m>67\leq</m> D+ <m>\lt 70</m></cell>
+            <cell><m>63\leq</m> D <m>\lt 67</m></cell>
+            <cell><m>60\leq</m> D- <m>\lt 63</m></cell>
+          </row>
+          <row>
+            <cell> </cell>
+            <cell>F <m>\lt 60</m></cell>
+            <cell> </cell>
+          </row>
+        </tabular>
+      </section>
+
+      <section xml:id="sec-Help">
+        <title>Help</title>
         <p>
-          This class meets for two 75-minute lectures and one 50-minute discussion each week over the  semester and carries the expectation that students will work on course learning activities (e.g. reading, problem sets, papers, and studying) for about six hours outside of classroom per week. The syllabus includes more information about meeting times and expectations for student work.
+          <alert>DO NOT</alert> wait to get help. Send me an email, visit me during my office hours, go to the Math Center, find a study partner, or get a tutor! I WANT YOU TO SUCCEED IN THIS COURSE!
         </p>
-      </paragraphs> -->
-    </section> 
-    <section xml:id="instructor" xmlns:xi="http://www.w3.org/2001/XInclude">
+      </section>
+
+      <section xml:id="sec-Attendance-Policy">
+        <title>Attendance Policy</title>
+        <p>
+          Attendance is vital to success in this course. Students are expected to attend and be prepared for all classes as part of the learning process. Class attendance is critical for learning the course material. If you have to miss a class, please let me know as soon as you are able to, preferably beforehand, if possible.
+        </p>
+        <p>
+          It is the student's responsibility for missed work due to absence. This includes, but is not limited to, completed notes, homework assignments, worksheets and labs, and exam date announcements.
+        </p>
+      </section>
+
+      <section xml:id="sec-Personal-Days">
+        <title>Personal Days</title>
+        <p>
+          In addition to the attendance policy stated above, students are entitled to two excused absences for any reason that may contribute to their personal wellness. Students must advise the instructor by email before class of their intent to utilize a Personal Day as the reason for their absence.  A Personal Day will not be approved retroactively. Students may, but are not required, to provide additional information regarding their absence. Additionally, Personal Days may not:
+        </p>
+        <p>
+          <dl>
+            <li>
+              <p>
+                be on consecutive class days;
+              </p>
+            </li>
+            <li>
+              <p>
+                be used in the same week;
+              </p>
+            </li>
+            <li>
+              <p>
+                be used immediately preceding or following a University holiday or break period;
+              </p>
+            </li>
+            <li>
+              <p>
+                be used on days when exams, presentations or other major assignments are scheduled.
+              </p>
+            </li>
+          </dl>
+        </p>
+        <p>
+          A Personal Day does not grant an automatic extension for items due. Students remain responsible for all assignments, exams, presentations, etc. due on that date. It is in the instructor's discretion to determine whether any extension is appropriate given individual circumstances.
+        </p>
+      </section>
+
+      <section xml:id="sec-Health-and-Safety">
+        <title>Health and Safety</title>
+        <p>
+          As it is every member's responsibility to contribute to the creation of a healthy and safe community, students are required to comply with the University health and safety directives, guidelines, rules, regulations, and protocols in times of emergency and/or public health concern. Violations may be referred for action under the Code of Student Conduct.
+        </p>
+      </section>
+
+      <section xml:id="sec-Absences-for-Religious-Holidays">
+        <title>Absences for Religious Holidays</title>
+        <p>
+          Villanova University makes every reasonable effort to allow members of the community to observe their religious holidays, consistent with the University's obligations, responsibilities, and policies. Students who expect to miss a class or assignment due to the observance of a religious holiday should discuss the matter with their professors as soon as possible, normally at least two weeks in advance. Absence from classes or examinations for religious reasons does not relieve students from responsibility for any part of the course work required during the absence. 
+        </p>
+        <p>
+          <url href="https://www1.villanova.edu/villanova/provost/resources/student/policies/religiousholidays.html" />
+        </p>
+      </section>
+
+      <section xml:id="sec-Course-Feedback">
+        <title>Course Feedback</title>
+        <p>
+          Feedback Friday forms may be used to collect feedback anonymously from time-to-time. Dr. Sulyok is also willing to hear any other comments, suggestions, or constructive criticism students are willing to offer either in person, via email, or through an anonymous note slipped under her office door or in her mailbox. Students will be given the opportunity to give anonymous feedback about the course and instructor at the end of the semester. 
+        </p>
+      </section>
+
+      <section xml:id="sec-ODS-and-LSS">
+        <title>Office for Access and Disability Services (ADS) and Learning Support Services (LSS)</title>
+        <p>
+          It is the policy of Villanova to make reasonable academic accommodations for qualified individuals with disabilities. All students who need accommodations should go to <url href="https://vuclockwrk.villanova.edu/clockwork/custom/misc/home.aspx">Clockwork for Students</url> via myNOVA to complete the Online Intake or to send accommodation letters for professors. Go the the LSS website <url href="http://learningsupportservices.villanova.edu" /> or the ADS website <url href="https://www1.villanova.edu/university/student-life/ads.html" /> for registration guidelines and instructions. If you have any questions, please contact LSS at (610) 519-5176 or <url href="mailto:learning.support.services@villanova.edu" visual="learning.support.services@villanova.edu">learning.support.services@villanova.edu</url>, or ADS at (610) 519-3209 or <url href="mailto:ods@villanova.edu" visual="ods@villanova.edu">ods@villanova.edu</url>.
+        </p>
+      </section>
+
+      <section xml:id="sec-Academic-Integrity">
+        <title>Academic Integrity</title>
+        <p>
+          All students are expected to uphold Villanova's Academic Integrity Policy and Code. Any incident of academic dishonesty will be reported to the Dean of the College of Liberal Arts and Sciences for disciplinary action. You may view the <url href="https://www1.villanova.edu/villanova/provost/resources/student/policies/integrity.html">University's Academic Integrity Policy and Code</url> for a detailed description.
+        </p>
+        <p>
+          If a student is found responsible for an academic integrity violation, which results in a grade penalty, they may not WX the course unless they are approved to WX for significant medical reasons.  Students applying for a WX based on significant medical reasons, must submit documentation and their request for an exception will be considered.
+        </p>
+        <p>
+          I allow <em>and encourage</em> students to work together and discuss assignments. However, there are differences between working together (collaborating) and what may constitute a violation of academic integrity. <em>Working together/collaborating</em> means you and your peer(s) talk about a problem, work together to figure it out, but then write up and submit your answers independently. To be sure to avoid what may look like copying and possibly violating the academic integrity policy, take a short break between working in a group and writing up your answers.
+        </p>
+      </section>
+
+      <section xml:id="sec-AI-Policy">
+        <title>AI Policy</title>
+        <p>
+          The use of artificial intelligence (AI) tools, such as ChatGPT, Copilot, Grammarly, or other generative AI software, is <em>not permitted</em> in this course for any assignments, projects, or exams, unless otherwise stated by the instructor. All work submitted must be your own, created without the assistance of AI.
+        </p>
+        <p>
+          Use of AI will be considered an <em>academic integrity violation</em> and handled in accordance with Villanova's <url href="https://www1.villanova.edu/villanova/provost/resources/student/policies/integrity/integritypolicy.html">Academic Integrity Policy</url>. If you are unsure whether something counts as AI use, please ask me before proceeding.
+        </p>
+      </section>
+
+      <section xml:id="sec-Inclement-Weather-Policy">
+        <title>Inclement Weather Policy</title>
+        <p>
+          If classes are canceled or delayed due to inclement weather, students should check their email and Blackboard for changes to the course schedule. Students may be required to complete missed activities prior to the next class period.
+        </p>
+      </section>
+
+      <section xml:id="sec-How-to-Succeed">
+        <title>How to Succeed in this Course</title>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Do <term>not</term> wait to get help! 
+              </p>
+            </li>
+            <li>
+              <p>
+                My scheduled <term>office hours</term> are available to you for help with assignments, questions about the class, or even just to chat. I know you have other classes, so if you cannot make my regularly scheduled office hours, I encourage you to email me so we can determine another time to meet. I will respond to any emails within 24 hours during the week. Emails received over the weekend I will respond by the following Monday morning.
+              </p>
+            </li>
+            <li>
+              <p>
+                Another resource is the <term>Math Center in the Learners' Studio</term>. The Math Center is located on the second floor of Falvey Memorial Library in 204.
+              </p>
+            </li>
+            <li>
+              <p>
+                In addition, fellow <term>classmates and study groups</term> can be helpful resources for navigating any course.
+              </p>
+            </li>
+            <li>
+              <p>
+                Practice, practice, practice! Mathematics is best learned by <term>doing</term> and through exploration. Do not be afraid to be wrong; just give something a try! It's all part of the learning process. 
+              </p>
+            </li>
+          </ol>
+        </p>
+      </section>
+
+      <p>
+        If the instructor finds it necessary to make informational changes (e.g., office hours, schedule adjustments, syllabus changes, etc.) due to students' needs or unforeseen circumstances, students will be notified in writing/email of any such changes.
+      </p>
+
+    <!-- </section> <section xml:id="instructor" xmlns:xi="http://www.w3.org/2001/XInclude">
       <title>Instructor</title>
       <paragraphs>
           <title>Dr. Cara J. Sulyok</title>
-          <!-- <aside component="online">
+          <aside component="online">
             <p>
               My pronouns are he/him/his.
               I ask that you address me as <q>Prof. Keller</q> or <q>Dr.
@@ -192,9 +645,9 @@
               Therefore, in solidarity with my colleagues of all identities and backgrounds, <q>Prof.
               Keller</q> is the form of address that I prefer.
               </p>
-          </aside> -->
+          </aside>
           <p>
-            <!-- <nbsp/> -->
+            <nbsp/>
             <dl>
               <li>
                 <title>Title</title>
@@ -216,7 +669,7 @@
               </li>
             </dl>
           </p>
-        </paragraphs>
+        </paragraphs> 
     
       <subsection xml:id="subsec-office-hours">
         <title>Office Hours</title>
@@ -900,8 +1353,8 @@
     </p>
   </section>
 
-  <!-- Include backmatter -->
-  <xi:include href="./backmatter.ptx" />
+  Include backmatter
+  <xi:include href="./backmatter.ptx" /> -->
 
-  </article>
+  </article> 
 </pretext>
