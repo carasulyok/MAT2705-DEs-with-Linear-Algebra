@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: salem                          *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>MAT 2705 - Differential Equations with Linear Algebra</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="article">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.9.8';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.b215b0da62d655bd.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.28cc3c4821792be5.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8141ae22fd347e48.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="MAT2705-Fall25" class="pretext article ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href=""><img src="external/villanova.png" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="MAT2705-syllabus.html"><span class="title">MAT 2705 - Differential Equations with Linear Algebra</span> <span class="subtitle">Fall 2025</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button hidden" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><span class="previous-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></span><span class="up-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></span><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar hidden"><nav id="ptx-toc" class="ptx-toc depth0 focused" data-preexpanded-levels="0" data-max-levels="0"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="#frontmatter" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#sec-instructor-info" class="internal"><span class="title">Professor Information</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#sec-Sections" class="internal"><span class="title">Sections</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#sec-Office-Hours" class="internal"><span class="title">Office Hours</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#sec-course-info" class="internal"><span class="title">Course Information</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#sec-Classroom-Expectations-Etiquette" class="internal"><span class="title">Classroom Expectations/Etiquette</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#sec-Inclusivity-Statement" class="internal"><span class="title">Inclusivity Statement</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#sec-Assignemnts" class="internal"><span class="title">Assignments</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#sec-Extensions" class="internal"><span class="title">Extensions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#sec-Grading-of-Mastery-Based-Exams" class="internal"><span class="title">Grading of Mastery-Based Exams</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#sec-Calculating-Exam-Averages" class="internal"><span class="title">Calculating Exam Averages</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#sec-Concepts" class="internal"><span class="title">Concepts</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#sec-Grade-Determination" class="internal"><span class="title">Grade Determination</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#sec-Help" class="internal"><span class="title">Help</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#sec-Attendance-Policy" class="internal"><span class="title">Attendance Policy</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#sec-Personal-Days" class="internal"><span class="title">Personal Days</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#sec-Health-and-Safety" class="internal"><span class="title">Health and Safety</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#sec-Absences-for-Religious-Holidays" class="internal"><span class="title">Absences for Religious Holidays</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#sec-Course-Feedback" class="internal"><span class="title">Course Feedback</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#sec-ODS-and-LSS" class="internal"><span class="title">Office for Access and Disability Services (ADS) and Learning Support Services (LSS)</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#sec-Academic-Integrity" class="internal"><span class="title">Academic Integrity</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#sec-AI-Policy" class="internal"><span class="title">AI Policy</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#sec-Inclement-Weather-Policy" class="internal"><span class="title">Inclement Weather Policy</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#sec-How-to-Succeed" class="internal"><span class="title">How to Succeed in this Course</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="article" id="MAT2705-syllabus"><section class="frontmatter" id="frontmatter"><h2 class="heading">
+<span class="title">MAT 2705 - Differential Equations with Linear Algebra</span><span class="subtitle">Fall 2025</span>
+</h2>
+<div class="autopermalink" data-description="Front Matter"><a href="#frontmatter" title="Copy heading and permalink for Front Matter" aria-label="Copy heading and permalink for Front Matter">🔗</a></div></section><section class="section" id="sec-instructor-info"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Professor Information</span>
+</h2>
+<div class="para logical" id="sec-instructor-info-2">
+<dl class="description-list">
+<dt id="sec-instructor-info-2-1-1">Professor<div class="autopermalink" data-description="Item: Professor"><a href="#sec-instructor-info-2-1-1" title="Copy heading and permalink for Item: Professor" aria-label="Copy heading and permalink for Item: Professor">🔗</a></div>
+</dt>
+<dd><div class="para" id="sec-instructor-info-2-1-1-2">Dr. Cara Sulyok (she/her/hers)<div class="autopermalink" data-description="Paragraph"><a href="#sec-instructor-info-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sec-instructor-info-2-1-2">Email<div class="autopermalink" data-description="Item: Email"><a href="#sec-instructor-info-2-1-2" title="Copy heading and permalink for Item: Email" aria-label="Copy heading and permalink for Item: Email">🔗</a></div>
+</dt>
+<dd><div class="para" id="sec-instructor-info-2-1-2-2">
+<a class="external" href="mailto:cara.sulyok@villanova.edu" target="_blank">cara.sulyok@villanova.edu</a><div class="autopermalink" data-description="Paragraph"><a href="#sec-instructor-info-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sec-instructor-info-2-1-3">Office<div class="autopermalink" data-description="Item: Office"><a href="#sec-instructor-info-2-1-3" title="Copy heading and permalink for Item: Office" aria-label="Copy heading and permalink for Item: Office">🔗</a></div>
+</dt>
+<dd><div class="para" id="sec-instructor-info-2-1-3-2">SAC 368<div class="autopermalink" data-description="Paragraph"><a href="#sec-instructor-info-2-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sec-instructor-info-2-1-4"><div class="autopermalink" data-description="Item"><a href="#sec-instructor-info-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div></dt>
+<dd><div class="para" id="sec-instructor-info-2-1-4-1">The best way to contact me is via email. My typical response time to any email is within 24 business hours. I generally do not respond to emails after 5 pm and will catch up the following business day. If you do not receive a reply by the end of the second day, please resend your message. <div class="autopermalink" data-description="Paragraph"><a href="#sec-instructor-info-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+</dl>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-instructor-info-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: Professor Information"><a href="#sec-instructor-info" title="Copy heading and permalink for Section: Professor Information" aria-label="Copy heading and permalink for Section: Professor Information">🔗</a></div></section><section class="section" id="sec-Sections"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sections</span>
+</h2>
+<div class="para logical" id="sec-Sections-2">
+<dl class="description-list">
+<dt id="sec-Sections-2-1-1">Section 001<div class="autopermalink" data-description="Item: Section 001"><a href="#sec-Sections-2-1-1" title="Copy heading and permalink for Item: Section 001" aria-label="Copy heading and permalink for Item: Section 001">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="sec-Sections-2-1-1-2">MWF 10:40–11:30 am in Mendel Hall 256<div class="autopermalink" data-description="Paragraph"><a href="#sec-Sections-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-Sections-2-1-1-3">T 10–10:50 am in John Barry Hall 202A<div class="autopermalink" data-description="Paragraph"><a href="#sec-Sections-2-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="sec-Sections-2-1-2">Section 005<div class="autopermalink" data-description="Item: Section 005"><a href="#sec-Sections-2-1-2" title="Copy heading and permalink for Item: Section 005" aria-label="Copy heading and permalink for Item: Section 005">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="sec-Sections-2-1-2-2">MWF 12:50–1:40 pm in Chemical Engineering Building 202<div class="autopermalink" data-description="Paragraph"><a href="#sec-Sections-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-Sections-2-1-2-3">T 12–12:50 pm in John Barry Hall 213<div class="autopermalink" data-description="Paragraph"><a href="#sec-Sections-2-1-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+</dl>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-Sections-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: Sections"><a href="#sec-Sections" title="Copy heading and permalink for Section: Sections" aria-label="Copy heading and permalink for Section: Sections">🔗</a></div></section><section class="section" id="sec-Office-Hours"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Office Hours</span>
+</h2>
+<div class="para" id="sec-Office-Hours-2">Mondays 2-3 pm, Wednesdays 2-3 pm, Fridays 9-10 am, and by appointment<div class="autopermalink" data-description="Paragraph"><a href="#sec-Office-Hours-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-Office-Hours-3">
+<em class="emphasis">Office hours will be held in person. If my office door is open, you are always welcome to stop by with a quick question, or you can email me in advance to make an appointment for a different time. Please allow at least 24 hours notice (when possible) for additional office hour requests.</em><div class="autopermalink" data-description="Paragraph"><a href="#sec-Office-Hours-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: Office Hours"><a href="#sec-Office-Hours" title="Copy heading and permalink for Section: Office Hours" aria-label="Copy heading and permalink for Section: Office Hours">🔗</a></div></section><section class="section" id="sec-course-info"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Course Information</span>
+</h2>
+<div class="para logical" id="sec-course-info-2">
+<dl class="description-list">
+<dt id="sec-course-info-2-1-1">Course Description<div class="autopermalink" data-description="Item: Course Description"><a href="#sec-course-info-2-1-1" title="Copy heading and permalink for Item: Course Description" aria-label="Copy heading and permalink for Item: Course Description">🔗</a></div>
+</dt>
+<dd><div class="para" id="sec-course-info-2-1-1-2"> The construction of mathematical models to address real-world problems has been one of the most important aspects of each of the branches of science. It is often the case that these mathematical models are formulated in terms of equations involving functions as well as their derivatives. Such equations are called <em class="emphasis">differential equations</em>. This course will demonstrate the usefulness of ordinary differential equations for modeling physical and other phenomena. Complementary mathematical approaches for their solution will be presented, including analytical methods, graphical analysis, and numerical techniques. The basic content of the course includes: first-order equations, mathematical models, matrix algebra, linear equations of second- and higher-order, nonlinear systems and phase plane analysis, and numerical methods.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sec-course-info-2-1-2">Course Objectives<div class="autopermalink" data-description="Item: Course Objectives"><a href="#sec-course-info-2-1-2" title="Copy heading and permalink for Item: Course Objectives" aria-label="Copy heading and permalink for Item: Course Objectives">🔗</a></div>
+</dt>
+<dd><div class="para logical" id="sec-course-info-2-1-2-2">
+<div class="para">We will discuss Chapters 1-7 of the textbook, including some extra topics. After successful completion of the class, you should be able to do the following:</div>
+<ol class="decimal" id="sec-course-info-2-1-2-2-1">
+<li id="sec-course-info-2-1-2-2-1-1">
+<div class="para" id="sec-course-info-2-1-2-2-1-1-1"> <em class="emphasis">Understand</em> the concepts relating to the order and linearity of differential equations, analytic and computational techniques for solving differential equations, and application of differential equations.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-1-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-course-info-2-1-2-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-course-info-2-1-2-2-1-2">
+<div class="para" id="sec-course-info-2-1-2-2-1-2-1">
+<em class="emphasis">Understand</em> some fundamentals of linear algebra.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-1-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-course-info-2-1-2-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-course-info-2-1-2-2-1-3">
+<div class="para" id="sec-course-info-2-1-2-2-1-3-1"> <em class="emphasis">Apply</em> your understanding of the concepts, formulas, and problem-solving procedures to thoroughly investigate relevant mathematical models of real-world phenomena.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-1-2-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-course-info-2-1-2-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-course-info-2-1-2-2-1-4">
+<div class="para" id="sec-course-info-2-1-2-2-1-4-1">
+<em class="emphasis">Explain</em> the concepts of linear systems, differential equation solution methods, and related ideas at a fundamental level, as well as how and why we use the solution techniques that we use.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-1-2-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-course-info-2-1-2-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-course-info-2-1-2-2-1-5">
+<div class="para" id="sec-course-info-2-1-2-2-1-5-1">
+<em class="emphasis">Use</em> technology and mathematical software, including Maple and MATLAB, to study mathematics.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-1-2-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-course-info-2-1-2-2-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-course-info-2-1-2-2-1-6">
+<div class="para" id="sec-course-info-2-1-2-2-1-6-1">
+<em class="emphasis">Communicate</em> mathematics effectively in both writing and orally.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-1-2-2-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-course-info-2-1-2-2-1-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sec-course-info-2-1-3">Course Topics<div class="autopermalink" data-description="Item: Course Topics"><a href="#sec-course-info-2-1-3" title="Copy heading and permalink for Item: Course Topics" aria-label="Copy heading and permalink for Item: Course Topics">🔗</a></div>
+</dt>
+<dd><div class="para" id="sec-course-info-2-1-3-2">Broadly speaking, we will discuss the topics of first-order, one dimensional differential equations, linear algebra, systems of first-order differential equations, and higher-order differential equations.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sec-course-info-2-1-4">Course Calendar<div class="autopermalink" data-description="Item: Course Calendar"><a href="#sec-course-info-2-1-4" title="Copy heading and permalink for Item: Course Calendar" aria-label="Copy heading and permalink for Item: Course Calendar">🔗</a></div>
+</dt>
+<dd><div class="para" id="sec-course-info-2-1-4-2">The <a class="external" href="https://docs.google.com/document/d/1F2ISW02AAZpNKaPdSVAj0pPYz0TqI_Gl4_3gNFpDMnU/edit?usp=sharing" target="_blank">Course Calendar</a> specifies topics discussed on a given class day as well as due dates for assignments. The Course Calendar is a part of the syllabus. It may change, with advance notice provided to students.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sec-course-info-2-1-5">Required Materials<div class="autopermalink" data-description="Item: Required Materials"><a href="#sec-course-info-2-1-5" title="Copy heading and permalink for Item: Required Materials" aria-label="Copy heading and permalink for Item: Required Materials">🔗</a></div>
+</dt>
+<dd><div class="para" id="sec-course-info-2-1-5-2">
+<em class="emphasis">Differential Equations and Linear Algebra</em>, Fourth Edition by Edwards, Penney, and Calvis is <em class="emphasis">required</em> for this course. There is a link on Blackboard to buy the eTextbook and access the online homework system. Additionally, I <em class="emphasis">highly</em> recommend that you purchase a binder for all of your note-taking guides and other course materials.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-1-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sec-course-info-2-1-6">Software<div class="autopermalink" data-description="Item: Software"><a href="#sec-course-info-2-1-6" title="Copy heading and permalink for Item: Software" aria-label="Copy heading and permalink for Item: Software">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="sec-course-info-2-1-6-2">From the Mathematical Association of America, “Advances in technology, together with an increased interest in dynamical systems, are influencing the nature of many first courses in ordinary differential equations (ODEs). In addition, there is an increased emphasis on nonlinear differential equations, and mathematical modeling, as well as on qualitative and numerical approaches that shed light on the behavior of solutions. Analytic techniques are still important, but they no longer tend to be the sole focus.” As such, this course will include a software component for solving systems that are either tedious to solve, or cannot be solved, by hand.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-1-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-course-info-2-1-6-3">We will primarily utilize MATLAB in this course (freely available to Villanova University students at <a class="external" href="https://www.mathworks.com/academia/tah-portal/villanova-university-30843248.html" target="_blank"><code class="code-inline tex2jax_ignore">https://www.mathworks.com/academia/tah-portal/villanova-university-30843248.html</code></a>). No previous knowledge of MATLAB will be assumed for this course. Other software packages may be utilized at the instructor’s discretion.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-1-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="sec-course-info-2-1-7">Blackboard<div class="autopermalink" data-description="Item: Blackboard"><a href="#sec-course-info-2-1-7" title="Copy heading and permalink for Item: Blackboard" aria-label="Copy heading and permalink for Item: Blackboard">🔗</a></div>
+</dt>
+<dd><div class="para" id="sec-course-info-2-1-7-2">Check Blackboard regularly (at least three times per week) during the semester for important information, announcements, and resources. Additionally, check your Villanova email every day. I will use email as my primary method of communication outside of class.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-1-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+</dl>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: Course Information"><a href="#sec-course-info" title="Copy heading and permalink for Section: Course Information" aria-label="Copy heading and permalink for Section: Course Information">🔗</a></div></section><section class="section" id="sec-Classroom-Expectations-Etiquette"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Classroom Expectations/Etiquette</span>
+</h2>
+<div class="para" id="sec-Classroom-Expectations-Etiquette-2">Students are expected to assist in maintaining a classroom environment conducive to learning. Disruptive behavior in the classroom may be classified as anything that disturbs the instructor or other students during the class period. Please be considerate of your instructor and classmates by refraining from cell phone use during class. It is incredibly distracting not only to yourself, but also to classmates and the instructor. Please do not have phones out unless it is for a class activity, such as an online quiz or poll.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Classroom-Expectations-Etiquette-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-Classroom-Expectations-Etiquette-3">I will provide note-taking guides to fill out during class, and I <em class="emphasis">highly</em> recommend that you take notes with me as I write since it has been shown that we retain and comprehend information much more deeply when we write it as opposed to just seeing it. It will also help you pay attention and keep you engaged. If I give students an opportunity to try a problem on their own during class, I recommend trying it! This is time for you to check your understanding, not for me. You will not know what you do not understand until you try it on your own; solely watching me do it is a completely different level of comprehension. The more you participate and ask questions, the more you will get from the class.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Classroom-Expectations-Etiquette-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: Classroom Expectations/Etiquette"><a href="#sec-Classroom-Expectations-Etiquette" title="Copy heading and permalink for Section: Classroom Expectations/Etiquette" aria-label="Copy heading and permalink for Section: Classroom Expectations/Etiquette">🔗</a></div></section><section class="section" id="sec-Inclusivity-Statement"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Inclusivity Statement</span>
+</h2>
+<div class="para" id="sec-Inclusivity-Statement-2">Villanova University supports an inclusive learning environment where diversity and individual differences are respected, appreciated, and recognized as a source of strength and intellectual inquiry. Our different backgrounds, experiences, and perspectives enrich our learning together; they are welcome and valued in this course. We will demonstrate respect and diligence in understanding how other peoples’ perspectives, behaviors, and worldviews may be different from our own and how they inform our own understanding.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Inclusivity-Statement-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: Inclusivity Statement"><a href="#sec-Inclusivity-Statement" title="Copy heading and permalink for Section: Inclusivity Statement" aria-label="Copy heading and permalink for Section: Inclusivity Statement">🔗</a></div></section><section class="section" id="sec-Assignemnts"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Assignments</span>
+</h2>
+<dl class="description-list">
+<dt id="sec-Assignemnts-2-1">Homework Assignments<div class="autopermalink" data-description="Item: Homework Assignments"><a href="#sec-Assignemnts-2-1" title="Copy heading and permalink for Item: Homework Assignments" aria-label="Copy heading and permalink for Item: Homework Assignments">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="sec-Assignemnts-2-1-2">Homework will be assigned weekly on MyLab related to the Foundational Skills listed below. It will serve as an opportunity to practice the concepts and techniques learned in class. The initial due dates will be on Thursdays at 11:59 pm. Certain weeks may have more than one skill to work on. You must make your first attempts by the due date, but you will have unlimited attempts until the end of the semester to demonstrate proficiency in each skill. It takes time to work on new skills and having multiple attempts and the full semester affords you the chance to practice and not be penalized for an initial incorrect answer or mistake. These problems are auto-graded by MyLab as either fully correct or not. There is no partial credit.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Assignemnts-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-Assignemnts-2-1-3">You will also have “bigger picture” Applications/Concepts assignments due on most Wednesdays. Due dates (which are typically at least one week after seeing the necessary material in class) are posted on the Course Calendar. Each Applications/Concepts assignment is designed to tie together multiple concepts from class or relate class material to an application. There will be one or two multi-part questions on each assignment, but waiting until the last minute to start them is not a good idea. Applications/Concepts assignments are due in class on the day marked on the Course Calendar. If you will be absent from class on the day that an Applications/Concepts assignment is due, please email me a <em class="emphasis">single PDF</em> prior to the start of class.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Assignemnts-2-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="sec-Assignemnts-2-2">Worksheets and Labs<div class="autopermalink" data-description="Item: Worksheets and Labs"><a href="#sec-Assignemnts-2-2" title="Copy heading and permalink for Item: Worksheets and Labs" aria-label="Copy heading and permalink for Item: Worksheets and Labs">🔗</a></div>
+</dt>
+<dd><div class="para" id="sec-Assignemnts-2-2-2">The more actively involved you are during class time, the better you will learn the material. (In fact, research has shown that classes that are entirely lecture-based have significantly higher failure rates.) To encourage your learning, the class time will be a mixture of lecture and other activities. Participation will be expected, and it is part of your grade. As one of the active learning techniques used in this class, there will be worksheets, labs, and other participation assignments given throughout the semester. The worksheets are intended to give opportunities for group discussions about the material. Labs will give students the opportunity to practice using software. If you miss class on the day of a worksheet or in-class assignment, it is your responsibility to find a copy of it on Blackboard to complete and turn in. Late assignments will not be accepted unless otherwise discussed with the instructor.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Assignemnts-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sec-Assignemnts-2-3">Projects<div class="autopermalink" data-description="Item: Projects"><a href="#sec-Assignemnts-2-3" title="Copy heading and permalink for Item: Projects" aria-label="Copy heading and permalink for Item: Projects">🔗</a></div>
+</dt>
+<dd><div class="para" id="sec-Assignemnts-2-3-2">There will be at least one project assigned during the course. The project will involve an application problem of one’s interest (using software tools) and providing a written report of the mathematical results obtained that also details what those results mean in terms of the system being studied. More information will be provided once the project is assigned. Late projects will not be accepted unless otherwise discussed with the instructor.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Assignemnts-2-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sec-Assignemnts-2-4">Exams<div class="autopermalink" data-description="Item: Exams"><a href="#sec-Assignemnts-2-4" title="Copy heading and permalink for Item: Exams" aria-label="Copy heading and permalink for Item: Exams">🔗</a></div>
+</dt>
+<dd><div class="para" id="sec-Assignemnts-2-4-2">The style and grading of exams in this course may be different from anything you have experienced. We will use a method commonly referred to as “Grading for Growth” or “Mastery-Based Testing.” There will be three in-class Mastery Concept Days throughout the semester. Instead of using a percentage-based or points-based system on these exams, your grade will be determined by how well you display a mastery of specific mathematical objects called learning targets. The 19 learning targets for this course are listed below. Since there are no points, there is no partial credit. Students only receive credit when they display “mastery,” but there is a reassessment system in place that allows students to try a concept more than once to demonstrate understanding. You will have your first attempt at a concept on the week you submit the corresponding homework on myLab; Concept Days will be announced with at least one week notice.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Assignemnts-2-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sec-Assignemnts-2-5">Final Exam<div class="autopermalink" data-description="Item: Final Exam"><a href="#sec-Assignemnts-2-5" title="Copy heading and permalink for Item: Final Exam" aria-label="Copy heading and permalink for Item: Final Exam">🔗</a></div>
+</dt>
+<dd><div class="para" id="sec-Assignemnts-2-5-2">The final exam is scheduled by the University and is noted on our Course Calendar. The final exam time will serve as the last retesting opportunity and will include all 19 learning targets that have not yet been mastered. If a student has already mastered all of the concepts, they will not need to take the final exam.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Assignemnts-2-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+</dl>
+<div class="autopermalink" data-description="Section: Assignments"><a href="#sec-Assignemnts" title="Copy heading and permalink for Section: Assignments" aria-label="Copy heading and permalink for Section: Assignments">🔗</a></div></section><section class="section" id="sec-Extensions"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Extensions</span>
+</h2>
+<div class="para" id="sec-Extensions-2">Extensions will be granted when reasonable and feasible if requested by email (<a class="external" href="mailto:cara.sulyok@villanova.edu" target="_blank">cara.sulyok@villanova.edu</a>) before the due date. It is not necessary to give a reason. When you ask for an extension, be sure to give a date for when you can submit the assignment. This new date that you propose will become your new due date, and I will not extend it. Remember, everything must be completed by the end of the semester; so keeping up now will prevent a rush at the end of the term.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Extensions-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: Extensions"><a href="#sec-Extensions" title="Copy heading and permalink for Section: Extensions" aria-label="Copy heading and permalink for Section: Extensions">🔗</a></div></section><section class="section" id="sec-Grading-of-Mastery-Based-Exams"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Grading of Mastery-Based Exams</span>
+</h2>
+<div class="para" id="sec-Grading-of-Mastery-Based-Exams-2">Each Concept Day will include several learning targets. You will earn a mark for each target that indicates how well you demonstrated understanding of that target. There are three possible marks:<div class="autopermalink" data-description="Paragraph"><a href="#sec-Grading-of-Mastery-Based-Exams-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-Grading-of-Mastery-Based-Exams-3">
+<dl class="description-list">
+<dt id="sec-Grading-of-Mastery-Based-Exams-3-1-1">M - Mastered<div class="autopermalink" data-description="Item: M - Mastered"><a href="#sec-Grading-of-Mastery-Based-Exams-3-1-1" title="Copy heading and permalink for Item: M - Mastered" aria-label="Copy heading and permalink for Item: M - Mastered">🔗</a></div>
+</dt>
+<dd><div class="para" id="sec-Grading-of-Mastery-Based-Exams-3-1-1-2">Demonstrates understanding of the relevant target and no additional study or review is needed.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Grading-of-Mastery-Based-Exams-3-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sec-Grading-of-Mastery-Based-Exams-3-1-2">P - Progressing<div class="autopermalink" data-description="Item: P - Progressing"><a href="#sec-Grading-of-Mastery-Based-Exams-3-1-2" title="Copy heading and permalink for Item: P - Progressing" aria-label="Copy heading and permalink for Item: P - Progressing">🔗</a></div>
+</dt>
+<dd><div class="para" id="sec-Grading-of-Mastery-Based-Exams-3-1-2-2">Demonstrates partial understanding, but with fundamental error/misunderstanding or is incomplete. Needs review and revision.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Grading-of-Mastery-Based-Exams-3-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sec-Grading-of-Mastery-Based-Exams-3-1-3">X - Not assessable<div class="autopermalink" data-description="Item: X - Not assessable"><a href="#sec-Grading-of-Mastery-Based-Exams-3-1-3" title="Copy heading and permalink for Item: X - Not assessable" aria-label="Copy heading and permalink for Item: X - Not assessable">🔗</a></div>
+</dt>
+<dd><div class="para" id="sec-Grading-of-Mastery-Based-Exams-3-1-3-2">Not enough work to determine mastery: an insubstantial attempt, too many errors to correct each individually, or uses an inaccurate method or tool.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Grading-of-Mastery-Based-Exams-3-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+</dl>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-Grading-of-Mastery-Based-Exams-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-Grading-of-Mastery-Based-Exams-4">
+<dfn class="terminology">Once you have received an “M” on a learning target, you no longer have to attempt that learning target.</dfn><div class="autopermalink" data-description="Paragraph"><a href="#sec-Grading-of-Mastery-Based-Exams-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: Grading of Mastery-Based Exams"><a href="#sec-Grading-of-Mastery-Based-Exams" title="Copy heading and permalink for Section: Grading of Mastery-Based Exams" aria-label="Copy heading and permalink for Section: Grading of Mastery-Based Exams">🔗</a></div></section><section class="section" id="sec-Calculating-Exam-Averages"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Calculating Exam Averages</span>
+</h2>
+<div class="para" id="sec-Calculating-Exam-Averages-2">Each student’s exam average begins at 0 and is increased each time they master a learning target. Thus, you are progressively earning your grade over the course of the semester. The mastery of a single learning target will add 5.263% to the exam average so that a student who has mastered all 19 learning targets receives a 100% test average. If you receive a “P” on a learning target, you are advised to retest that concept. A grade of “P” will only add 2.5% to your test average per learning target, so no student will obtain a passing exam score with zero mastered concepts.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Calculating-Exam-Averages-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-Calculating-Exam-Averages-3">The primary source of extra attempts comes from the fact that once a concept has been tested, it will continue to appear on every subsequent Concept Day. Therefore, Concept Days get longer as the semester goes on and more learning targets are covered. <em class="emphasis">There is not time to complete all 19 learning targets on a single day.</em> Students are encouraged not to attempt all learning targets on every Concept Day, but to use their time wisely to attempt concepts they are most prepared for. There is no penalty for not attempting a learning target since it can be restested later. Also, once you have mastered a learning target, you can skip that problem. Each learning target is graded separately.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Calculating-Exam-Averages-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-Calculating-Exam-Averages-4">
+<em class="alert">Fair Warning:</em> This may be more complicated than the typical grading style you have become accustomed to over the years. That’s okay! If at any point in the semester you need clarification on how the system works or your standing in the course, I encourage you to come talk to or email me. The goal with this system is to provide you with <em class="emphasis">more control</em> over your grade with <em class="emphasis">less stress</em> and to reflect <em class="emphasis">your effort and improvement</em> (and negate the previously large impact of a single bad test day). It does not matter to me <em class="emphasis">when</em> in the semester you master a certain concept, just that you master it! Do not be discouraged if you do not master a learning target on the first attempt (or even the first few attempts). That’s normal! <em class="emphasis">Failure, though often viewed negatively, is an integral part of the learning process. The way to truly learn a subject is to make mistakes, learn from them, and do better next time.</em><div class="autopermalink" data-description="Paragraph"><a href="#sec-Calculating-Exam-Averages-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: Calculating Exam Averages"><a href="#sec-Calculating-Exam-Averages" title="Copy heading and permalink for Section: Calculating Exam Averages" aria-label="Copy heading and permalink for Section: Calculating Exam Averages">🔗</a></div></section><section class="section" id="sec-Concepts"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Concepts</span>
+</h2>
+<div class="para" id="sec-Concepts-2">There are 19 Foundational Skills, related to ordinary differential equations (ODEs) and Linear Algebra (LA). The following list of concepts is subject to change order depending on scheduling. The instructor will make every effort to stick to this list, but reserves the right to make changes as needed. Students will be notified of any major changes in class and/or via Blackboard announcement.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Concepts-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-Concepts-3">
+<ol class="decimal" id="sec-Concepts-3-1">
+<li id="sec-Concepts-3-1-1">
+<div class="para" id="sec-Concepts-3-1-1-1">ODE.1: Solve an ODE by direct integration.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Concepts-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec-Concepts-3-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec-Concepts-3-1-2">
+<div class="para" id="sec-Concepts-3-1-2-1">ODE.2: Solve a first-order, separable ODE.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Concepts-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec-Concepts-3-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec-Concepts-3-1-3">
+<div class="para" id="sec-Concepts-3-1-3-1">ODE.3: Solve a first-order, linear, nonhomogenous ODE.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Concepts-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#sec-Concepts-3-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="sec-Concepts-3-1-4">
+<div class="para" id="sec-Concepts-3-1-4-1">ODE.4: Apply existence and uniqueness theorems to first-order, one-dimensional ODEs.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Concepts-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#sec-Concepts-3-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="sec-Concepts-3-1-5">
+<div class="para" id="sec-Concepts-3-1-5-1">ODE.5: Find and classify the stability of equilibrium points for first-order, one-dimensional ODEs.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Concepts-3-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 5"><a href="#sec-Concepts-3-1-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+<li id="sec-Concepts-3-1-6">
+<div class="para" id="sec-Concepts-3-1-6-1">ODE.6: Approximate solutions to a first-order ODE using Euler’s Method, Modified Euler’s Method, and/or Runge-Kutta of order four.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Concepts-3-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 6"><a href="#sec-Concepts-3-1-6" title="Copy heading and permalink for Item 6" aria-label="Copy heading and permalink for Item 6">🔗</a></div>
+</li>
+<li id="sec-Concepts-3-1-7">
+<div class="para" id="sec-Concepts-3-1-7-1">ODE.7: Convert higher-order ODEs into a first-order system.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Concepts-3-1-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 7"><a href="#sec-Concepts-3-1-7" title="Copy heading and permalink for Item 7" aria-label="Copy heading and permalink for Item 7">🔗</a></div>
+</li>
+<li id="sec-Concepts-3-1-8">
+<div class="para" id="sec-Concepts-3-1-8-1">ODE.8: Use given solutions to find general and particular solutions to linear systems of ODEs.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Concepts-3-1-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 8"><a href="#sec-Concepts-3-1-8" title="Copy heading and permalink for Item 8" aria-label="Copy heading and permalink for Item 8">🔗</a></div>
+</li>
+<li id="sec-Concepts-3-1-9">
+<div class="para" id="sec-Concepts-3-1-9-1">ODE.9: Solve first-order, linear, homogeneous systems of ODEs.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Concepts-3-1-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 9"><a href="#sec-Concepts-3-1-9" title="Copy heading and permalink for Item 9" aria-label="Copy heading and permalink for Item 9">🔗</a></div>
+</li>
+<li id="sec-Concepts-3-1-10">
+<div class="para" id="sec-Concepts-3-1-10-1">ODE.10: Solve <span class="process-math">\(n\)</span>-th order, one-dimensional, linear, homogeneous, constant coefficient ODEs.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Concepts-3-1-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 10"><a href="#sec-Concepts-3-1-10" title="Copy heading and permalink for Item 10" aria-label="Copy heading and permalink for Item 10">🔗</a></div>
+</li>
+<li id="sec-Concepts-3-1-11">
+<div class="para" id="sec-Concepts-3-1-11-1">ODE.11: Solve <span class="process-math">\(n\)</span>-th order, one-dimensional, linear, nonhomogeneous, constant coefficient ODEs.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Concepts-3-1-11-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 11"><a href="#sec-Concepts-3-1-11" title="Copy heading and permalink for Item 11" aria-label="Copy heading and permalink for Item 11">🔗</a></div>
+</li>
+<li id="sec-Concepts-3-1-12">
+<div class="para" id="sec-Concepts-3-1-12-1">ODE.12: Find and classify equilibrium points of first-order ODE systems.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Concepts-3-1-12-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 12"><a href="#sec-Concepts-3-1-12" title="Copy heading and permalink for Item 12" aria-label="Copy heading and permalink for Item 12">🔗</a></div>
+</li>
+<li id="sec-Concepts-3-1-13">
+<div class="para" id="sec-Concepts-3-1-13-1">LA.1: Add, subtract, and multiply matrices.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Concepts-3-1-13-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 13"><a href="#sec-Concepts-3-1-13" title="Copy heading and permalink for Item 13" aria-label="Copy heading and permalink for Item 13">🔗</a></div>
+</li>
+<li id="sec-Concepts-3-1-14">
+<div class="para" id="sec-Concepts-3-1-14-1">LA.2: Solve matrix equations using row reductions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Concepts-3-1-14-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 14"><a href="#sec-Concepts-3-1-14" title="Copy heading and permalink for Item 14" aria-label="Copy heading and permalink for Item 14">🔗</a></div>
+</li>
+<li id="sec-Concepts-3-1-15">
+<div class="para" id="sec-Concepts-3-1-15-1">LA.3: Determine if a set of vectors is linearly independent or dependent.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Concepts-3-1-15-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 15"><a href="#sec-Concepts-3-1-15" title="Copy heading and permalink for Item 15" aria-label="Copy heading and permalink for Item 15">🔗</a></div>
+</li>
+<li id="sec-Concepts-3-1-16">
+<div class="para" id="sec-Concepts-3-1-16-1">LA.4: Determine if a matrix is invertible or not, and if so, compute the inverse.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Concepts-3-1-16-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 16"><a href="#sec-Concepts-3-1-16" title="Copy heading and permalink for Item 16" aria-label="Copy heading and permalink for Item 16">🔗</a></div>
+</li>
+<li id="sec-Concepts-3-1-17">
+<div class="para" id="sec-Concepts-3-1-17-1">LA.5: Determine if a set of vectors forms a basis for a vector space.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Concepts-3-1-17-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 17"><a href="#sec-Concepts-3-1-17" title="Copy heading and permalink for Item 17" aria-label="Copy heading and permalink for Item 17">🔗</a></div>
+</li>
+<li id="sec-Concepts-3-1-18">
+<div class="para" id="sec-Concepts-3-1-18-1">LA.6: Compute the determinant of a matrix.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Concepts-3-1-18-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 18"><a href="#sec-Concepts-3-1-18" title="Copy heading and permalink for Item 18" aria-label="Copy heading and permalink for Item 18">🔗</a></div>
+</li>
+<li id="sec-Concepts-3-1-19">
+<div class="para" id="sec-Concepts-3-1-19-1">LA.7: Find the eigenvalues and eigenvectors of a matrix.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Concepts-3-1-19-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 19"><a href="#sec-Concepts-3-1-19" title="Copy heading and permalink for Item 19" aria-label="Copy heading and permalink for Item 19">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-Concepts-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: Concepts"><a href="#sec-Concepts" title="Copy heading and permalink for Section: Concepts" aria-label="Copy heading and permalink for Section: Concepts">🔗</a></div></section><section class="section" id="sec-Grade-Determination"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Grade Determination</span>
+</h2>
+<div class="para" id="sec-Grade-Determination-2">I will use the Blackboard gradebook and expect you to check your scores to ensure there are no errors. A course average will be determined using the categories and weights listed below. Final letter grades will be determined using the grading scale below. The letter grade is a measure of a student’s mastery of the course material and fulfillment of course objectives.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Grade-Determination-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r0 l0 t0 lines">Component</th>
+<th scope="col" class="l m b1 r0 l0 t0 lines">Weight</th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Homework</td>
+<td class="l m b0 r0 l0 t0 lines">10%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Worksheets and Labs</td>
+<td class="l m b0 r0 l0 t0 lines">10%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Projects</td>
+<td class="l m b0 r0 l0 t0 lines">10%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Exam/Concepts</td>
+<td class="l m b0 r0 l0 t0 lines">70%</td>
+</tr>
+</table></div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(93\leq\)</span> A <span class="process-math">\(\leq 100\)</span>
+</td>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(90\leq\)</span> A- <span class="process-math">\(\lt 93\)</span>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(87\leq\)</span> B+ <span class="process-math">\(\lt 90\)</span>
+</td>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(83\leq\)</span> B <span class="process-math">\(\lt 87\)</span>
+</td>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(80\leq\)</span> B- <span class="process-math">\(\lt 83\)</span>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(77\leq\)</span> C+ <span class="process-math">\(\lt 80\)</span>
+</td>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(73\leq\)</span> C <span class="process-math">\(\lt 77\)</span>
+</td>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(70\leq\)</span> C- <span class="process-math">\(\lt 73\)</span>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(67\leq\)</span> D+ <span class="process-math">\(\lt 70\)</span>
+</td>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(63\leq\)</span> D <span class="process-math">\(\lt 67\)</span>
+</td>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(60\leq\)</span> D- <span class="process-math">\(\lt 63\)</span>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">F <span class="process-math">\(\lt 60\)</span>
+</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Section: Grade Determination"><a href="#sec-Grade-Determination" title="Copy heading and permalink for Section: Grade Determination" aria-label="Copy heading and permalink for Section: Grade Determination">🔗</a></div></section><section class="section" id="sec-Help"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Help</span>
+</h2>
+<div class="para" id="sec-Help-2">
+<em class="alert">DO NOT</em> wait to get help. Send me an email, visit me during my office hours, go to the Math Center, find a study partner, or get a tutor! I WANT YOU TO SUCCEED IN THIS COURSE!<div class="autopermalink" data-description="Paragraph"><a href="#sec-Help-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: Help"><a href="#sec-Help" title="Copy heading and permalink for Section: Help" aria-label="Copy heading and permalink for Section: Help">🔗</a></div></section><section class="section" id="sec-Attendance-Policy"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Attendance Policy</span>
+</h2>
+<div class="para" id="sec-Attendance-Policy-2">Attendance is vital to success in this course. Students are expected to attend and be prepared for all classes as part of the learning process. Class attendance is critical for learning the course material. If you have to miss a class, please let me know as soon as you are able to, preferably beforehand, if possible.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Attendance-Policy-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-Attendance-Policy-3">It is the student’s responsibility for missed work due to absence. This includes, but is not limited to, completed notes, homework assignments, worksheets and labs, and exam date announcements.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Attendance-Policy-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: Attendance Policy"><a href="#sec-Attendance-Policy" title="Copy heading and permalink for Section: Attendance Policy" aria-label="Copy heading and permalink for Section: Attendance Policy">🔗</a></div></section><section class="section" id="sec-Personal-Days"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Personal Days</span>
+</h2>
+<div class="para" id="sec-Personal-Days-2">In addition to the attendance policy stated above, students are entitled to two excused absences for any reason that may contribute to their personal wellness. Students must advise the instructor by email before class of their intent to utilize a Personal Day as the reason for their absence.  A Personal Day will not be approved retroactively. Students may, but are not required, to provide additional information regarding their absence. Additionally, Personal Days may not:<div class="autopermalink" data-description="Paragraph"><a href="#sec-Personal-Days-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-Personal-Days-3">
+<dl class="description-list">
+<dt id="sec-Personal-Days-3-1-1"><div class="autopermalink" data-description="Item"><a href="#sec-Personal-Days-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div></dt>
+<dd><div class="para" id="sec-Personal-Days-3-1-1-1">be on consecutive class days;<div class="autopermalink" data-description="Paragraph"><a href="#sec-Personal-Days-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sec-Personal-Days-3-1-2"><div class="autopermalink" data-description="Item"><a href="#sec-Personal-Days-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div></dt>
+<dd><div class="para" id="sec-Personal-Days-3-1-2-1">be used in the same week;<div class="autopermalink" data-description="Paragraph"><a href="#sec-Personal-Days-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sec-Personal-Days-3-1-3"><div class="autopermalink" data-description="Item"><a href="#sec-Personal-Days-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div></dt>
+<dd><div class="para" id="sec-Personal-Days-3-1-3-1">be used immediately preceding or following a University holiday or break period;<div class="autopermalink" data-description="Paragraph"><a href="#sec-Personal-Days-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sec-Personal-Days-3-1-4"><div class="autopermalink" data-description="Item"><a href="#sec-Personal-Days-3-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div></dt>
+<dd><div class="para" id="sec-Personal-Days-3-1-4-1">be used on days when exams, presentations or other major assignments are scheduled.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Personal-Days-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+</dl>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-Personal-Days-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-Personal-Days-4">A Personal Day does not grant an automatic extension for items due. Students remain responsible for all assignments, exams, presentations, etc. due on that date. It is in the instructor’s discretion to determine whether any extension is appropriate given individual circumstances.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Personal-Days-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: Personal Days"><a href="#sec-Personal-Days" title="Copy heading and permalink for Section: Personal Days" aria-label="Copy heading and permalink for Section: Personal Days">🔗</a></div></section><section class="section" id="sec-Health-and-Safety"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Health and Safety</span>
+</h2>
+<div class="para" id="sec-Health-and-Safety-2">As it is every member’s responsibility to contribute to the creation of a healthy and safe community, students are required to comply with the University health and safety directives, guidelines, rules, regulations, and protocols in times of emergency and/or public health concern. Violations may be referred for action under the Code of Student Conduct.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Health-and-Safety-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: Health and Safety"><a href="#sec-Health-and-Safety" title="Copy heading and permalink for Section: Health and Safety" aria-label="Copy heading and permalink for Section: Health and Safety">🔗</a></div></section><section class="section" id="sec-Absences-for-Religious-Holidays"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Absences for Religious Holidays</span>
+</h2>
+<div class="para" id="sec-Absences-for-Religious-Holidays-2">Villanova University makes every reasonable effort to allow members of the community to observe their religious holidays, consistent with the University’s obligations, responsibilities, and policies. Students who expect to miss a class or assignment due to the observance of a religious holiday should discuss the matter with their professors as soon as possible, normally at least two weeks in advance. Absence from classes or examinations for religious reasons does not relieve students from responsibility for any part of the course work required during the absence.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Absences-for-Religious-Holidays-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-Absences-for-Religious-Holidays-3">
+<a class="external" href="https://www1.villanova.edu/villanova/provost/resources/student/policies/religiousholidays.html" target="_blank"><code class="code-inline tex2jax_ignore">https://www1.villanova.edu/villanova/provost/resources/student/policies/religiousholidays.html</code></a><div class="autopermalink" data-description="Paragraph"><a href="#sec-Absences-for-Religious-Holidays-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: Absences for Religious Holidays"><a href="#sec-Absences-for-Religious-Holidays" title="Copy heading and permalink for Section: Absences for Religious Holidays" aria-label="Copy heading and permalink for Section: Absences for Religious Holidays">🔗</a></div></section><section class="section" id="sec-Course-Feedback"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Course Feedback</span>
+</h2>
+<div class="para" id="sec-Course-Feedback-2">Feedback Friday forms may be used to collect feedback anonymously from time-to-time. Dr. Sulyok is also willing to hear any other comments, suggestions, or constructive criticism students are willing to offer either in person, via email, or through an anonymous note slipped under her office door or in her mailbox. Students will be given the opportunity to give anonymous feedback about the course and instructor at the end of the semester.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Course-Feedback-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: Course Feedback"><a href="#sec-Course-Feedback" title="Copy heading and permalink for Section: Course Feedback" aria-label="Copy heading and permalink for Section: Course Feedback">🔗</a></div></section><section class="section" id="sec-ODS-and-LSS"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Office for Access and Disability Services (ADS) and Learning Support Services (LSS)</span>
+</h2>
+<div class="para" id="sec-ODS-and-LSS-2">It is the policy of Villanova to make reasonable academic accommodations for qualified individuals with disabilities. All students who need accommodations should go to <a class="external" href="https://vuclockwrk.villanova.edu/clockwork/custom/misc/home.aspx" target="_blank">Clockwork for Students</a> via myNOVA to complete the Online Intake or to send accommodation letters for professors. Go the the LSS website <a class="external" href="http://learningsupportservices.villanova.edu" target="_blank"><code class="code-inline tex2jax_ignore">http://learningsupportservices.villanova.edu</code></a> or the ADS website <a class="external" href="https://www1.villanova.edu/university/student-life/ads.html" target="_blank"><code class="code-inline tex2jax_ignore">https://www1.villanova.edu/university/student-life/ads.html</code></a> for registration guidelines and instructions. If you have any questions, please contact LSS at (610) 519-5176 or <a class="external" href="mailto:learning.support.services@villanova.edu" target="_blank">learning.support.services@villanova.edu</a>, or ADS at (610) 519-3209 or <a class="external" href="mailto:ods@villanova.edu" target="_blank">ods@villanova.edu</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-ODS-and-LSS-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: Office for Access and Disability Services (ADS) and Learning Support Services (LSS)"><a href="#sec-ODS-and-LSS" title="Copy heading and permalink for Section: Office for Access and Disability Services (ADS) and Learning Support Services (LSS)" aria-label="Copy heading and permalink for Section: Office for Access and Disability Services (ADS) and Learning Support Services (LSS)">🔗</a></div></section><section class="section" id="sec-Academic-Integrity"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Academic Integrity</span>
+</h2>
+<div class="para" id="sec-Academic-Integrity-2">All students are expected to uphold Villanova’s Academic Integrity Policy and Code. Any incident of academic dishonesty will be reported to the Dean of the College of Liberal Arts and Sciences for disciplinary action. You may view the <a class="external" href="https://www1.villanova.edu/villanova/provost/resources/student/policies/integrity.html" target="_blank">University’s Academic Integrity Policy and Code</a> for a detailed description.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Academic-Integrity-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-Academic-Integrity-3">If a student is found responsible for an academic integrity violation, which results in a grade penalty, they may not WX the course unless they are approved to WX for significant medical reasons.  Students applying for a WX based on significant medical reasons, must submit documentation and their request for an exception will be considered.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Academic-Integrity-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-Academic-Integrity-4">I allow <em class="emphasis">and encourage</em> students to work together and discuss assignments. However, there are differences between working together (collaborating) and what may constitute a violation of academic integrity. <em class="emphasis">Working together/collaborating</em> means you and your peer(s) talk about a problem, work together to figure it out, but then write up and submit your answers independently. To be sure to avoid what may look like copying and possibly violating the academic integrity policy, take a short break between working in a group and writing up your answers.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Academic-Integrity-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: Academic Integrity"><a href="#sec-Academic-Integrity" title="Copy heading and permalink for Section: Academic Integrity" aria-label="Copy heading and permalink for Section: Academic Integrity">🔗</a></div></section><section class="section" id="sec-AI-Policy"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">AI Policy</span>
+</h2>
+<div class="para" id="sec-AI-Policy-2">The use of artificial intelligence (AI) tools, such as ChatGPT, Copilot, Grammarly, or other generative AI software, is <em class="emphasis">not permitted</em> in this course for any assignments, projects, or exams, unless otherwise stated by the instructor. All work submitted must be your own, created without the assistance of AI.<div class="autopermalink" data-description="Paragraph"><a href="#sec-AI-Policy-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-AI-Policy-3">Use of AI will be considered an <em class="emphasis">academic integrity violation</em> and handled in accordance with Villanova’s <a class="external" href="https://www1.villanova.edu/villanova/provost/resources/student/policies/integrity/integritypolicy.html" target="_blank">Academic Integrity Policy</a>. If you are unsure whether something counts as AI use, please ask me before proceeding.<div class="autopermalink" data-description="Paragraph"><a href="#sec-AI-Policy-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: AI Policy"><a href="#sec-AI-Policy" title="Copy heading and permalink for Section: AI Policy" aria-label="Copy heading and permalink for Section: AI Policy">🔗</a></div></section><section class="section" id="sec-Inclement-Weather-Policy"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Inclement Weather Policy</span>
+</h2>
+<div class="para" id="sec-Inclement-Weather-Policy-2">If classes are canceled or delayed due to inclement weather, students should check their email and Blackboard for changes to the course schedule. Students may be required to complete missed activities prior to the next class period.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Inclement-Weather-Policy-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: Inclement Weather Policy"><a href="#sec-Inclement-Weather-Policy" title="Copy heading and permalink for Section: Inclement Weather Policy" aria-label="Copy heading and permalink for Section: Inclement Weather Policy">🔗</a></div></section><section class="section" id="sec-How-to-Succeed"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">How to Succeed in this Course</span>
+</h2>
+<div class="para logical" id="sec-How-to-Succeed-2">
+<ol class="decimal" id="sec-How-to-Succeed-2-1">
+<li id="sec-How-to-Succeed-2-1-1">
+<div class="para" id="sec-How-to-Succeed-2-1-1-1">Do <dfn class="terminology">not</dfn> wait to get help!<div class="autopermalink" data-description="Paragraph"><a href="#sec-How-to-Succeed-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec-How-to-Succeed-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec-How-to-Succeed-2-1-2">
+<div class="para" id="sec-How-to-Succeed-2-1-2-1">My scheduled <dfn class="terminology">office hours</dfn> are available to you for help with assignments, questions about the class, or even just to chat. I know you have other classes, so if you cannot make my regularly scheduled office hours, I encourage you to email me so we can determine another time to meet. I will respond to any emails within 24 hours during the week. Emails received over the weekend I will respond by the following Monday morning.<div class="autopermalink" data-description="Paragraph"><a href="#sec-How-to-Succeed-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec-How-to-Succeed-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec-How-to-Succeed-2-1-3">
+<div class="para" id="sec-How-to-Succeed-2-1-3-1">Another resource is the <dfn class="terminology">Math Center in the Learners’ Studio</dfn>. The Math Center is located on the second floor of Falvey Memorial Library in 204.<div class="autopermalink" data-description="Paragraph"><a href="#sec-How-to-Succeed-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#sec-How-to-Succeed-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="sec-How-to-Succeed-2-1-4">
+<div class="para" id="sec-How-to-Succeed-2-1-4-1">In addition, fellow <dfn class="terminology">classmates and study groups</dfn> can be helpful resources for navigating any course.<div class="autopermalink" data-description="Paragraph"><a href="#sec-How-to-Succeed-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#sec-How-to-Succeed-2-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="sec-How-to-Succeed-2-1-5">
+<div class="para" id="sec-How-to-Succeed-2-1-5-1">Practice, practice, practice! Mathematics is best learned by <dfn class="terminology">doing</dfn> and through exploration. Do not be afraid to be wrong; just give something a try! It’s all part of the learning process.<div class="autopermalink" data-description="Paragraph"><a href="#sec-How-to-Succeed-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 5"><a href="#sec-How-to-Succeed-2-1-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-How-to-Succeed-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: How to Succeed in this Course"><a href="#sec-How-to-Succeed" title="Copy heading and permalink for Section: How to Succeed in this Course" aria-label="Copy heading and permalink for Section: How to Succeed in this Course">🔗</a></div></section><div class="para" id="MAT2705-syllabus-27">If the instructor finds it necessary to make informational changes (e.g., office hours, schedule adjustments, syllabus changes, etc.) due to students’ needs or unforeseen circumstances, students will be notified in writing/email of any such changes.<div class="autopermalink" data-description="Paragraph"><a href="#MAT2705-syllabus-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Article: MAT 2705 - Differential Equations with Linear Algebra"><a href="#MAT2705-syllabus" title="Copy heading and permalink for Article: MAT 2705 - Differential Equations with Linear Algebra" aria-label="Copy heading and permalink for Article: MAT 2705 - Differential Equations with Linear Algebra">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<span class="previous-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></span><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
